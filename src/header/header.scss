@@ -1,0 +1,53 @@
+@import "../index.scss";
+nav{
+    height: 5.438rem;
+    border-bottom: 1px solid $border-color;
+    // padding: $custom-padding;
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    .row{
+        height: inherit;
+        a{
+            height: 100%;
+            display: block;
+            text-decoration: none;
+            cursor: pointer;
+            ul{
+                list-style: none;
+                display: flex;
+                height: inherit;
+                align-items: center;
+                li{
+                    padding-right: 1rem;
+                    img{
+                        width: 2.438rem;
+                    }
+                    h4{
+                        color: $title-color;
+                        font-weight: $semiBold;
+                        font-size: 1.875rem;
+                    }
+                }
+            }
+        }
+        .menu-links{
+            list-style: none;
+            display: flex;
+            height: 100%;
+            justify-content: flex-end;
+            align-items: center;
+            li{
+                &:nth-child(even){
+                    padding: 0 2rem;
+                }
+                a{
+                color: $title-color;
+                font-size: 1.125rem;
+                }  
+            }
+        }
+    }
+}

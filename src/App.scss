@@ -1,0 +1,150 @@
+@import "./index.scss";
+@import "./header/header.scss";
+@import "./components/home/home.scss";
+@import "./components/about/about.scss";
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: $font-family;
+}
+body{
+  height: 100vh;
+  overflow: hidden;
+}
+h1, h2, h3, h4 , h5, h6{
+  margin-bottom: 0;
+}
+ul{
+  padding-left: 0;
+}
+.button-blue{
+  padding: 16px 60px;
+  background: $primary-color;
+  color: #fff;
+  font-size: 1.125rem;
+  border: none; 
+  border-radius: 50px;
+}
+.noBg-button{
+  background: transparent;
+  border: none;
+  margin: 80px 0;
+  float: right;
+  display: flex;
+  font-size: 1.125rem;
+  align-items: center;
+  img{
+    margin: 0 0.313rem
+  }
+}
+@keyframes floatAnimate{
+  from{
+    bottom: -50%;
+  }
+  to{
+    bottom: 0;
+  }
+}
+.floating-next-div{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0px -6px 44px rgba(167,167,167,0.32);
+  background-color: #fff;
+  height: 144px;
+  animation: 0.5s floatAnimate ease-in-out;
+  .thumbnail-area{
+    img{
+      width: 14.5rem;
+      height: 6rem;
+    }
+    h4{
+      font-size: 1.563rem;
+      font-weight: $medium;
+      color: $title-color;
+      padding-bottom: 3px;
+    }
+    span{
+      font-size: 1rem;
+      font-weight: $regular;
+      color: $para-color;
+      display: block;
+      padding-right: 1.5rem;
+    }
+  }
+  .tags_next_page{
+    display: flex;
+    justify-content: space-between;
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      justify-content: flex-start;
+      margin-bottom: 0;
+      align-items: center;
+      gap: 8px;
+      li{
+          background-color: $body-bg;
+          border-radius: 60px;
+          border: 1px solid $primary-color;
+          color: $primary-color;
+          padding: 6px 28px;
+          font-size: 0.75rem;
+          &:hover{
+            background-color: $primary-color;
+            color: $body-bg;
+            transition: 0.3s ease-in-out;
+          }
+      }
+    }
+    .arrow_next{
+      cursor: pointer;
+    }
+  }
+}
+@keyframes viewport{
+  from{
+    top: 100vh;
+  }
+  to{
+    top: 0;
+  }
+}
+@keyframes slideUp{
+  0%{top: 100vh;}
+  50%{top: 0;}
+  100%{top: -100vh}
+}
+.slideAnimation{
+  background-color: $primary-color;
+  width: 100%;
+  top: -100vh;
+  left: 0;
+  position: absolute;
+  height: 100vh;
+  animation: 1.5s slideUp ease-in-out;
+  z-index: 9999;
+}
+.activeAbout{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: $body-bg;
+  animation: 1.2s viewport ease-in-out;
+}
+@keyframes textAnimate{
+  from{
+    position: relative;
+    right: -25px;
+  }to{
+    position: relative;
+    right: 0px;
+  }
+}
+.textAnimate{
+  animation: 0.5s textAnimate ease-in-out;
+}

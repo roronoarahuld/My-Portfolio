@@ -1,0 +1,72 @@
+@import "../../index.scss";
+#sectionHome{
+    padding: $custom-padding-2;
+    height: 100vh;
+    .content-section{
+        border-right: 2px dashed $border-color;
+        position: relative;
+        .content-area{
+            position: absolute;
+            padding: 0 0.75rem;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            h1{
+                font-size: $font-44;
+                max-width: 31.913rem;
+                font-weight: $light;
+                line-height: 3.5rem;
+                span{
+                    &:nth-child(1){
+                        font-weight: $regular;
+                    }
+                    font-weight: $semiBold;
+                    font-size: $font-44;
+                    display: inline-block;
+                }
+            }
+            p{
+                color: $para-color;
+                font-size: 1.125rem;
+                padding-top: 8px;
+            }
+            ul{
+                list-style: none;
+                padding-top: 1.875rem;
+            }
+        }
+        .jobtitle{
+            position: relative;
+            display: block;
+            padding-left: 24px;
+            color: $title-color;
+            font-weight: $regular;
+            font-size: 1.125rem;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 20px;
+                height: 20px;
+                background-color: $body-bg;
+                border: 7px solid $primary-color;
+                border-radius: 4px;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    .image-section{
+        padding: 2.25rem 0;
+        .image-area{
+            background: url("../../images/home-img.jpg") no-repeat;
+            width: 30.25rem;
+            height: 39.5rem;
+            background-size: cover;
+            background-position-y: bottom;
+            float: right;
+            border-radius: 15px;
+        }
+    }
+}
