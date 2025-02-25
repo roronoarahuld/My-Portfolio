@@ -1,11 +1,12 @@
 import { useContext, useEffect, useState } from "react"
+import FloatingDiv from "../../commonComponents/FloatingDiv";
 import { aboutContext } from "../home/home";
-import { aboutHeaderContext } from "../../header/header";
+import Header from "../../header/header";
+
 
 const About = () => {
     const [showDiv, setShowDiv] = useState(0);
-    const [showAboutSection, setShowAboutSection] = useContext(aboutContext) ;
-    // const [showAboutHeader, setShowAboutHeader] = useContext(aboutHeaderContext) ;
+    const [showAboutComponent, setShowAboutComponent] = useContext(aboutContext);
     const divNext = () => {
         var addDiv = showDiv;
         setShowDiv(++addDiv);
@@ -15,11 +16,11 @@ const About = () => {
         setShowDiv(--minusDiv);
     }
     useEffect(() => {
-    }, [showDiv])
+    }, [showDiv, showAboutComponent])
     return (
         <>
-            <div className={showAboutSection ? "slideAnimation" : ""}></div>
-            <section id="sectionAbout" className={showAboutSection ? "activeAbout" : ''}>
+            <div className={showAboutComponent ? "slideAnimation" : ""}></div>
+            <section id="sectionAbout" className={showAboutComponent ? "activeAbout" : 'd-none'}>
                 <div className="container h-100">
                     <div className="row h-100">
                         <div className="col-6 image-section">
@@ -198,34 +199,12 @@ const About = () => {
                     </div>
                 </div>
                 <div className={showDiv === 3 ? "floating-next-div" : ""}>
-                    <div className='container h-100'>
-                        <div className='row h-100 align-items-center'>
-                            <div className='col-6'>
-                                <div className='thumbnail-area d-flex justify-content-between'>
-                                    <img src={require("../../images/work-thumb.png")} />
-                                    <div className='d-flex flex-column ps-5 justify-content-center'>
-                                        <h4>Work</h4>
-                                        <span>Crafting seamless digital experiences through years of creative ...</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='col-6'>
-                                <div className='tags_next_page'>
-                                    <ul>
-                                        <li>Website</li>
-                                        <li>UI / UX</li>
-                                        <li>Website Department</li>
-                                        <li>Android</li>
-                                        <li>IOS</li>
-                                        <li>Website Design</li>
-                                    </ul>
-                                    <div className='arrow_next'>
-                                        <img src={require("../../images/arrow.png")} />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <FloatingDiv
+                        // onPress={handleClick} 
+                        title="Work" 
+                        subtitle="Crafting seamless digital experiences through years of creative"
+                        tags={["Website","UI / UX","Website Department","Android","IOS","Website Design"]} 
+                    />
                 </div>
             </section>
         </>

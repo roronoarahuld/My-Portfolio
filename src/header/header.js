@@ -1,11 +1,12 @@
-import { createContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import About from "../components/about/about";
+import { aboutContext } from "../components/home/home";
 
-export const aboutHeaderContext = createContext()
 const Header = () => {
-    const [showAboutHeadeComponent, setShowAboutHeaderComponent] = useState(false);
-    const handleClick = () => {
-        setShowAboutHeaderComponent(true)
+    const showComponent = useContext(aboutContext)
+    console.log("header update", viewState)
+    const checkSection = ({sendData}) => {
+        return <About sendData={}/>
     }
     return(
         <>
@@ -13,7 +14,7 @@ const Header = () => {
                 <div className="container h-100">
                     <div className="row">
                         <div className="col-6">
-                            <a href="">
+                            <a href="#!">
                                 <ul>
                                     <li>
                                         <img alt="Logo" src={require("../images/kuroso.png")}/>
@@ -27,7 +28,7 @@ const Header = () => {
                         <div className="col-6">
                             <ul className="menu-links">
                                 <li>
-                                    <a onClick={handleClick} href={undefined}>About Me</a>
+                                    <a onClick={checkSection} href="#!">About Me</a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0)">Work</a>
@@ -40,9 +41,7 @@ const Header = () => {
                     </div>
                 </div>
             </nav>
-            {/* <aboutHeaderContext.Provider value={[showAboutHeadeComponent, setShowAboutHeaderComponent]}>
-                <About/>
-            </aboutHeaderContext.Provider> */}
+            
         </>
     )
 }

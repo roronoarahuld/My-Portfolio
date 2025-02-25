@@ -1,15 +1,16 @@
 import React, { createContext, useEffect, useState } from 'react';
 import About from '../about/about';
 import FloatingDiv from '../../commonComponents/FloatingDiv';
+import Header from '../../header/header';
 
 export const aboutContext = createContext()
 const Home = () => {
-    const [showComponent, setShowComponent] = useState(false);
+    const [showAboutComponent, setShowAboutComponent] = useState(false);
     const handleClick = () => {
-        setShowComponent(true); // Update state to show the component 
+        setShowAboutComponent(true); // Update state to show the component 
     };
     useEffect(() =>{
-    },[showComponent])
+    },[showAboutComponent])
     return (
         <>
             <section id="sectionHome">
@@ -48,15 +49,17 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <FloatingDiv 
-                    onPress={handleClick} 
-                    title="About Me" 
-                    subtitle="I am dedicated front-end developer specializing in Front-End developer"
-                    image="about"
-                    tags={["Work Experience","UI / UX","UI Developer","Front End Developer","React Native","CSS"]}
-                />
+                <div className='floating-next-div'>
+                    <FloatingDiv 
+                        onPress={handleClick} 
+                        title="About Me" 
+                        subtitle="I am dedicated front-end developer specializing in Front-End developer"
+                        image="about"
+                        tags={["Work Experience","UI / UX","UI Developer","Front End Developer","React Native","CSS"]}
+                    />
+                </div>
             </section>
-            <aboutContext.Provider value={[showComponent, setShowComponent]}>
+            <aboutContext.Provider value={[showAboutComponent, setShowAboutComponent]}>
                 <About/>
             </aboutContext.Provider>
         </>
