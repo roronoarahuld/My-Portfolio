@@ -1,20 +1,15 @@
 import { createContext, useContext, useEffect, useState } from "react";
-import About from "../components/about/about";
-import { aboutContext } from "../components/home/home";
+import { useGlobalContext } from "../AppContext";
 
 const Header = () => {
-    const showComponent = useContext(aboutContext)
-    console.log("header update", viewState)
-    const checkSection = ({sendData}) => {
-        return <About sendData={}/>
-    }
+    const {setActiveComponent} = useGlobalContext()
     return(
         <>
             <nav>
                 <div className="container h-100">
                     <div className="row">
                         <div className="col-6">
-                            <a href="#!">
+                            <a onClick={()=>{setActiveComponent("Home")}} href="#!">
                                 <ul>
                                     <li>
                                         <img alt="Logo" src={require("../images/kuroso.png")}/>
@@ -28,7 +23,7 @@ const Header = () => {
                         <div className="col-6">
                             <ul className="menu-links">
                                 <li>
-                                    <a onClick={checkSection} href="#!">About Me</a>
+                                    <a onClick={()=>{setActiveComponent("About")}} href="#!">About Me</a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0)">Work</a>

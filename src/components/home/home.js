@@ -2,15 +2,14 @@ import React, { createContext, useEffect, useState } from 'react';
 import About from '../about/about';
 import FloatingDiv from '../../commonComponents/FloatingDiv';
 import Header from '../../header/header';
+import { useGlobalContext } from '../../AppContext';
 
 export const aboutContext = createContext()
 const Home = () => {
-    const [showAboutComponent, setShowAboutComponent] = useState(false);
+    const { setActiveComponent } = useGlobalContext();
     const handleClick = () => {
-        setShowAboutComponent(true); // Update state to show the component 
+        setActiveComponent("About")
     };
-    useEffect(() =>{
-    },[showAboutComponent])
     return (
         <>
             <section id="sectionHome">
@@ -59,9 +58,6 @@ const Home = () => {
                     />
                 </div>
             </section>
-            <aboutContext.Provider value={[showAboutComponent, setShowAboutComponent]}>
-                <About/>
-            </aboutContext.Provider>
         </>
     )
 }

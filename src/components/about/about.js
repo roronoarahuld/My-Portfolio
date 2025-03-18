@@ -6,7 +6,6 @@ import Header from "../../header/header";
 
 const About = () => {
     const [showDiv, setShowDiv] = useState(0);
-    const [showAboutComponent, setShowAboutComponent] = useContext(aboutContext);
     const divNext = () => {
         var addDiv = showDiv;
         setShowDiv(++addDiv);
@@ -16,11 +15,10 @@ const About = () => {
         setShowDiv(--minusDiv);
     }
     useEffect(() => {
-    }, [showDiv, showAboutComponent])
+    }, [showDiv])
     return (
         <>
-            <div className={showAboutComponent ? "slideAnimation" : ""}></div>
-            <section id="sectionAbout" className={showAboutComponent ? "activeAbout" : 'd-none'}>
+            <section id="sectionAbout">
                 <div className="container h-100">
                     <div className="row h-100">
                         <div className="col-6 image-section">
