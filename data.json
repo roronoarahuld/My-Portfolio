@@ -1,0 +1,170 @@
+[
+    {
+        "menuLogo": "./src/images/kuroso.png",
+        "menu": [
+            {
+                "menu-name": "RAHUL"
+            },
+            {
+                "menu-name": "About"
+            },
+            {
+                "menu-name": "Work"
+            },
+            {
+                "menu-name": "Contact"
+            }
+        ],
+        "homePage": [
+            {
+                "title": "HEY! I am Rahul, A Front-End Developer based in Mumbai",
+                "subtitle": "Team Lead for mobile app development, driving in-house projects. Focusing on UI/UX design.",
+                "designation": "Front-End Developer - Team Lead",
+                "buttonText": "Contact Me",
+                "socialLinks": [
+                    {
+                        "linkImage": "",
+                        "link": "",
+                        "linkName": "Facebook"
+                    },
+                    {
+                        "linkImage": "",
+                        "link": "",
+                        "linkName": "Instagram"
+                    },
+                    {
+                        "linkImage": "",
+                        "link": "",
+                        "linkName": "LinkedIn"
+                    }
+                ],
+                "nextPageDetails": [
+                    {
+                        "title": "About Me",
+                        "subtitle": "I am dedicated front-end developer specializing in Front-End developer",
+                        "image": "about",
+                        "tags": [
+                            {
+                                "tagName": "Work Experience"
+                            },
+                            {
+                                "tagName": "UI / UX"
+                            },
+                            {
+                                "tagName": "UI Developer"
+                            },
+                            {
+                                "tagName": "Front End Developer"
+                            },
+                            {
+                                "tagName": "React Native"
+                            },
+                            {
+                                "tagName": "CSS"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "aboutPage": [
+            {
+                "pageId": 1,
+                "title": "Building Cool Things for the Web and App",
+                "subtitle": "I am a dedicated front-end developer specializing in creating intuitive and user-friendly digital experiences. I do have strong foundation in UI/UX design principles and significant hands-on experience in developing cross-platform mobile applications for both Android and iOS using React Native. I am currently a Team Lead for mobile app development, focusing on innovative in-house projects."
+            },
+            {
+                "pageId": 2,
+                "title": "Key Highlights of my Career",
+                "roleHighlights": [
+                    {
+                        "roletitle": "Current Role",
+                        "roleDescp": [
+                            {
+                                "role": "Serving as Team Lead< at Homeville Group Pvt. Ltd"
+                            },
+                            {
+                                "role": "Previously contributed as a Senior Software Engineer, focusing on Angular-based systems and UI/UX enhancements."
+                            }
+                        ]
+                    },
+                    {
+                        "roletitle": "Previous Experiences",
+                        "roleDescp": [
+                            {
+                                "roleTitle": "UI Developer at Anandpushp Technologies Pvt. Ltd.",
+                                "roleDescp": "Product based startup on EdTech platforms. Developing the entire  project with responsive"
+                            },
+                            {
+                                "roleTitle": "Web/UI Developer at IIT Bombay",
+                                "roleDescp": "Working as UI/ Web Developer. Being the only Front - End Developer I was responsible for the whole project. Worked on project like Next Education Research Lab"
+                            },
+                            {
+                                "roleTitle": "Web Developer at Digital Latte and Suggesssto Pvt. Ltd",
+                                "roleDescp": "Developed websites from PSD designs and contributed to major projects, including e-commerce platforms."
+                            }
+                        ]
+                    },
+                    {
+                        "roletitle": "Internship",
+                        "roleDescp": "Worked as a Web Developer Intern in the ,Educational Technology Department at IIT Bombay, developing responsive web pages and learning new technologies."
+                    }
+                ]
+            },
+            {
+                "pageId": 3,
+                "title": "Skills",
+                "skillset": [
+                    {
+                        "skillName": "Design Tools",
+                        "skillImages": [
+                            {
+                                "image": ""
+                            },
+                            {
+                                "image": ""
+                            },
+                            {
+                                "image": ""
+                            }
+                        ]
+                    },
+                    {
+                        "skillName": "Front End Development",
+                        "skillImages": [
+                            {
+                                "image": ""
+                            },
+                            {
+                                "image": ""
+                            },
+                            {
+                                "image": ""
+                            },
+                            {
+                                "image": ""
+                            },
+                            {
+                                "image": ""
+                            },
+                            {
+                                "image": ""
+                            }
+                        ]
+                    },
+                    {
+                        "skillName": "Frameworks & Libraries",
+                        "skillImages": [
+                            {
+                                "image": ""
+                            },
+                            {
+                                "image": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
