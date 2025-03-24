@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './App.scss';
 import Home from './components/home/home';
 import Header from './header/header';
@@ -9,6 +8,7 @@ import { GlobalProvider, useGlobalContext } from './AppContext';
 
 const PageContent = () => {
   const { activeComponent } = useGlobalContext();
+  console.log("active", activeComponent)
 
   return (
     <div>
