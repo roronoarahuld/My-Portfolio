@@ -7,6 +7,7 @@
   padding: 0;
   font-size: 16px;
   font-family: $font-family;
+  background-color: #000;
 }
 body{
   overflow: hidden;
@@ -17,9 +18,18 @@ h1, h2, h3, h4 , h5, h6{
 ul{
   padding-left: 0;
 }
+@keyframes sectionAnimate {
+  0% {opacity: 0;}
+  50% {opacity: 0.5;}
+  100% {opacity: 1;}
+}
 section{
   height: 100vh;
   overflow: hidden;
+  animation-name: sectionAnimate;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+
 }
 .button-blue{
   padding: 16px 60px;
@@ -127,7 +137,9 @@ section{
   left: 0;
   position: absolute;
   height: 100vh;
-  animation: 1.5s slideUp ease-in-out;
+  animation-name: slideUp;
+  animation-timing-function: ease;
+  animation-duration: 1.5s;
   z-index: 9999;
 }
 .activeAbout{

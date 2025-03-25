@@ -4,122 +4,137 @@
     padding: $custom-padding-3;
     height: 100vh;
 
-    .content-section {
-        border-left: 2px dashed $border-color;
-        position: relative;
+    .container {
+        height: 80vh;
 
-        .content-area {
-            position: absolute;
-            padding: 0 0.75rem 0 2.5rem;
-            width: 100%;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+        .row {
+            height: inherit;
 
-            h1 {
-                font-size: $font-44;
-                max-width: 31.913rem;
-                font-weight: $regular;
-                line-height: 3.5rem;
+            .content-section {
+                border-left: 2px dashed $border-color;
+                position: relative;
 
-                span {
-                    font-weight: $semiBold;
-                    font-size: $font-44;
-                    display: inline-block;
-                }
-            }
+                .content-area {
+                    position: absolute;
+                    padding: 0 0.75rem 0 2.5rem;
+                    width: 100%;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
 
-            p {
-                color: $para-color;
-                font-size: 1.125rem;
-                padding-top: 8px;
-            }
+                    h1 {
+                        font-size: $font-44;
+                        max-width: 31.913rem;
+                        font-weight: $regular;
+                        line-height: 3.5rem;
 
-            .skills-ul{
-                padding-top: 0.625rem;
-                list-style: auto;
-                li{
-                    color: $para-color;
-                    font-size: 1.125rem;
-                    font-weight: $light;
-                    padding-bottom: 1.25rem;
-                    display: flex;
-                    div{
-                        img{
-                            width: 30px;
-                            height: 30px;
-                            margin: 0 0.313rem;
+                        span {
+                            font-weight: $semiBold;
+                            font-size: $font-44;
+                            display: inline-block;
                         }
                     }
-                }
-            }
 
-            ul {
-                list-style: none;
-                padding-top: 1.875rem;
-
-                li {
-                    font-size: 1.125rem;
-                    line-height: 1.5em;
-                    font-weight: $medium;
-
-                    span {
-                        color: $title-color;
-                        font-weight: $regular;
+                    p {
+                        color: $para-color;
+                        font-size: 1.125rem;
+                        padding-top: 8px;
                     }
 
-                    ul,
-                    ol {
-                        list-style-type: disc;
+                    .skills-ul {
+                        padding-top: 0.625rem;
+                        list-style: auto;
 
                         li {
                             color: $para-color;
+                            font-size: 1.125rem;
                             font-weight: $light;
-                            margin-bottom: 0.313rem;
+                            padding-bottom: 1.25rem;
+                            display: flex;
 
+                            div {
+                                img {
+                                    width: 30px;
+                                    height: 30px;
+                                    margin: 0 0.313rem;
+                                }
+                            }
+                        }
+                    }
+
+                    ul {
+                        list-style: none;
+                        padding-top: 1.875rem;
+
+                        li {
+                            font-size: 1.125rem;
+                            line-height: 1.5em;
+                            font-weight: $medium;
+
+                            span {
+                                color: $title-color;
+                                font-weight: $regular;
+                            }
+
+                            ul,
                             ol {
-                                padding-top: 0;
+                                list-style-type: disc;
+
+                                li {
+                                    color: $para-color;
+                                    font-weight: $light;
+                                    margin-bottom: 0.313rem;
+
+                                    ol {
+                                        padding-top: 0;
+                                    }
+                                }
                             }
                         }
                     }
                 }
+
+                .jobtitle {
+                    position: relative;
+                    display: block;
+                    padding-left: 24px;
+                    color: $title-color;
+                    font-weight: $regular;
+                    font-size: 1.125rem;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        width: 20px;
+                        height: 20px;
+                        background-color: $body-bg;
+                        border: 7px solid $primary-color;
+                        border-radius: 4px;
+                        transform: translateY(-50%);
+                    }
+                }
             }
-        }
 
-        .jobtitle {
-            position: relative;
-            display: block;
-            padding-left: 24px;
-            color: $title-color;
-            font-weight: $regular;
-            font-size: 1.125rem;
+            .image-section {
+                position: relative;
 
-            &::before {
-                content: '';
-                position: absolute;
-                top: 50%;
-                left: 0;
-                width: 20px;
-                height: 20px;
-                background-color: $body-bg;
-                border: 7px solid $primary-color;
-                border-radius: 4px;
-                transform: translateY(-50%);
+                .image-area {
+                    // background: url("../../images/about-img.jpg") no-repeat;
+                    background-color: $primary-color;
+                    width: 30.25rem;
+                    height: 39.5rem;
+                    background-size: cover;
+                    background-position-y: bottom;
+                    float: left;
+                    border-radius: 15px;
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                }
             }
-        }
-    }
-
-    .image-section {
-        padding: 2.25rem 0;
-
-        .image-area {
-            background: url("../../images/about-img.jpg") no-repeat;
-            width: 30.25rem;
-            height: 39.5rem;
-            background-size: cover;
-            background-position-y: bottom;
-            float: left;
-            border-radius: 15px;
         }
     }
 }
