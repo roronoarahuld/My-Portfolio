@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react"
 import FloatingDiv from "../../commonComponents/FloatingDiv";
 import SlideAnimation from "../../commonComponents/SlideAnimation"
+import { useGlobalContext } from '../../AppContext';
 
 
 const About = () => {
+    const { setActiveComponent } = useGlobalContext();
     const [showDiv, setShowDiv] = useState(0);
     const divNext = () => {
         var addDiv = showDiv;
@@ -13,6 +15,9 @@ const About = () => {
         var minusDiv = showDiv;
         setShowDiv(--minusDiv);
     }
+    const handleClick = () => {
+        setActiveComponent("Work")
+    };
     useEffect(() => {
     }, [showDiv])
     return (
@@ -197,7 +202,7 @@ const About = () => {
                 </div>
                 <div className={showDiv === 3 ? "floating-next-div" : ""}>
                     <FloatingDiv
-                        // onPress={handleClick} 
+                        onPress={handleClick} 
                         title="Work"
                         subtitle="Crafting seamless digital experiences through years of creative"
                         tags={["Website", "UI / UX", "Website Department", "Android", "IOS", "Website Design"]}

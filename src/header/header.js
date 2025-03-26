@@ -26,7 +26,7 @@ const Header = () => {
                                     <a onClick={()=>{setActiveComponent("About")}} href="#!">About Me</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)">Work</a>
+                                    <a onClick={()=>{setActiveComponent("Work")}} href="#!">Work</a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0)">Contact</a>
