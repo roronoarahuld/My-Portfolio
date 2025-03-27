@@ -1,9 +1,69 @@
 @import "../../index.scss";
 
+@keyframes dimensions {
+    from {
+        width: 280px;
+        height: 420px;
+    }
+
+    to {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
 #sectionWork {
     padding: $custom-padding-3;
     height: 100vh;
+    .carousel {
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        overflow: hidden;
+        position: absolute;
+        top: 54%;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        .slides {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            .box {
+                scroll-snap-align: start;
+                flex-shrink: 0;
+                width: 280px;
+                height: 420px;
+                margin-right: 50px;
+                border-radius: 10px;
+                background: $primary-color;
+                transform-origin: center center;
+                transform: scale(1);
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
 
+            .expanded {
+                animation-name: dimensions;
+                animation-timing-function: ease-out;
+                animation-duration: 0.5s;
+                width: 100vw;
+                height: 100vh;
+                top: 0;
+                left: 0;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 0;
+                z-index: 999;
+            }
+        }
+    }
     .container {
         height: 100vh;
 
@@ -15,58 +75,19 @@
                 position: absolute;
                 width: 100%;
                 height: inherit;
-                top: 40%;
+                top: 20%;
                 left: 0;
-                transform: translateY(-55%);
+                transform: translateY(-80%);
+                z-index: 99;
 
                 h1 {
                     font-size: $font-44;
                     font-weight: $regular;
                     line-height: 3.5rem;
                     text-align: center;
-                    padding-bottom: 8rem;
                 }
 
-                .carousel {
-                    width: 100%;
-                    text-align: center;
-                    overflow: hidden;
-
-                    .slides {
-                        display: flex;
-                        overflow-x: auto;
-                        scroll-snap-type: x mandatory;
-                        scroll-behavior: smooth;
-                        -webkit-overflow-scrolling: touch;
-
-                        .box {
-                            scroll-snap-align: start;
-                            flex-shrink: 0;
-                            width: 280px;
-                            height: 420px;
-                            margin-right: 50px;
-                            border-radius: 10px;
-                            background: $primary-color;
-                            transform-origin: center center;
-                            transform: scale(1);
-                            position: relative;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                        }
-
-                        .expanded {
-                            z-index: 999;
-                            width: 100%;
-                            height: 100vh;
-                            top: 0;
-                            transition: transform 13.5s ease-out;
-                            left: 0;
-                            position: fixed;
-                            border-radius: 0;
-                        }
-                    }
-                }
+                
             }
 
             .remove-abs {
@@ -74,7 +95,6 @@
                 left: unset;
                 transform: unset;
                 transition: transform 0.2s ease-in-out;
-                transition-delay: -2s;
             }
         }
     }
