@@ -8,8 +8,8 @@ export default function Work() {
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
-                            {/* <div className={isExpanded === true ? "content-section remove-abs" : "content-section"}> */}
-                                <div className="content-section">
+                            <div className={isExpanded === true ? "content-section remove-zIndex" : "content-section"}>
+                                {/* <div className="content-section"> */}
                                 <h1>Transforming Ideas into Impactful Designs</h1>
                                 {/* Slider */}
 
