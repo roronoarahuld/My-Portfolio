@@ -1,101 +1,8 @@
 @import "../../index.scss";
 
-@keyframes dimensions {
-    from {
-        width: 280px;
-        height: 420px;
-    }
-
-    to {
-        width: 100vw;
-        height: 100vh;
-    }
-}
-
-@keyframes opacityAnimate {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes positionAnimate {
-    from {
-        top: 15%;
-    }
-
-    to {
-        top: 0;
-    }
-}
-
 #sectionWork {
     padding: $custom-padding-3;
     height: 100vh;
-    .blue_bg{
-        background-color: $primary-color;
-        padding: 10rem;
-    }
-    .carousel {
-        width: 100%;
-        height: 100vh;
-        text-align: center;
-        overflow: hidden;
-        position: absolute;
-        top: 55%;
-        transform: translateY(-45%);
-        display: flex;
-        align-items: center;
-
-        .slides {
-            display: flex;
-            overflow-x: auto;
-            scroll-snap-type: x mandatory;
-            scroll-behavior: smooth;
-            -webkit-overflow-scrolling: touch;
-            width: 70%;
-            margin: 0 auto;
-            &::-webkit-scrollbar{
-                width: 0px;
-                background: transparent;
-            }
-            .box {
-                scroll-snap-align: start;
-                flex-shrink: 0;
-                width: 280px;
-                height: 420px;
-                margin-right: 50px;
-                border-radius: 10px;
-                background: $primary-color;
-                transform-origin: center center;
-                transform: scale(1);
-                position: relative;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border: none;
-                &:nth-child(1){
-                    background: url("../../images/antim_yatra_2.png");
-                    background-repeat: no-repeat;
-                    background-position: left;
-                    background-size: cover; 
-                    &::after{
-                        content: '';
-                        border-radius: 10px;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: inherit;
-                        background-color: rgba(0,0,0,0.6);
-                    }
-                }
-            }
-        }
-    }
 
     .container {
         height: 100vh;
@@ -120,6 +27,16 @@
                     text-align: center;
                 }
 
+                p {
+                    max-width: 900px;
+                    text-align: center;
+                    margin: 0 auto;
+                    font-size: 18px;
+                    padding-top: 1.25rem;
+                    font-weight: $light;
+                    color: $para-color;
+                }
+
 
             }
 
@@ -128,62 +45,161 @@
             }
         }
     }
+
+    .carousel {
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        overflow: hidden;
+        position: absolute;
+        top: 55%;
+        transform: translateY(-45%);
+        display: flex;
+        align-items: center;
+
+        .slides {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            width: 70%;
+            margin: 0 auto;
+
+            &::-webkit-scrollbar {
+                width: 0px;
+                background: transparent;
+            }
+
+            .box {
+                scroll-snap-align: start;
+                flex-shrink: 0;
+                width: 280px;
+                height: 420px;
+                margin-right: 50px;
+                border-radius: 10px;
+                background: $primary-color;
+                transform-origin: center center;
+                transform: scale(1);
+                position: relative;
+                display: flex;
+                padding: 1rem;
+                justify-content: flex-start;
+                align-items: end;
+                border: none;
+                flex-wrap: wrap;
+
+                &::after {
+                    content: '';
+                    border-radius: 10px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: inherit;
+                    background-color: rgba(0, 0, 0, 0.6);
+                }
+
+                h6 {
+                    color: $body-bg;
+                    position: absolute;
+                    z-index: 99;
+                    top: 70%;
+                    font-size: 1.563rem;
+                    transform: translateY(-45%);
+                    text-align: left;
+                }
+
+                &:nth-child(1) {
+                    background: url("../../images/card_antim.png");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+                &:nth-child(2) {
+                    background: url("../../images/card_puneri.png");
+                    background-repeat: no-repeat;
+                    background-position: left;
+                    background-size: cover;
+                }
+                &:nth-child(3) {
+                    background: url("../../images/card_staples.png");
+                    background-repeat: no-repeat;
+                    background-position: left;
+                    background-size: cover;
+                }
+                &:nth-child(4) {
+                    background: url("../../images/card_JIB.png");
+                    background-repeat: no-repeat;
+                    background-position: left;
+                    background-size: cover;
+                }
+                &:nth-child(5) {
+                    background: url("../../images/card_bhn.png");
+                    background-repeat: no-repeat;
+                    background-position: left;
+                    background-size: cover;
+                }
+            }
+        }
+    }
 }
+
 .slideContent {
-    animation-name: opacityAnimate;
-    animation-timing-function: ease-in-out;
-    animation-duration: 2.5s;
     width: 100%;
     height: inherit;
     background: $body-bg;
     padding: 1rem 5rem 5rem;
     text-align: left;
     position: relative;
-    .breadcrumb{
-        button{
+
+    .breadcrumb {
+        button {
             background-color: transparent;
             border: none;
-            img{
+            cursor: pointer;
+
+            img {
                 width: 20px;
                 height: 20px;
                 margin-right: 8px;
             }
-            span{
+
+            span {
                 font-weight: $regular;
                 color: $title-color;
 
             }
         }
     }
+
     h3 {
         font-size: $font-44;
-        animation: 2.5s positionAnimate ease-in-out;
     }
 
     p {
         color: $para-color;
         font-size: 1.125rem;
         padding-bottom: 1.25rem;
-        animation: 2.5s positionAnimate ease-in-out;
         font-weight: $regular;
 
         &:not(:nth-child(2)) {
             padding-top: 1.25rem;
         }
     }
-    span{
+
+    span {
         display: block;
         margin: 1rem 0;
         font-size: 1.25rem;
         color: $title-color;
-        animation: 2.5s positionAnimate ease-in-out;
     }
+
     .tech_img {
-        animation: 2.5s positionAnimate ease-in-out;
         img {
-                width: 30px;
-                height: 30px;
-                margin: 0 0.313rem;
+            width: 30px;
+            height: 30px;
+            margin: 0 0.313rem;
         }
     }
 }

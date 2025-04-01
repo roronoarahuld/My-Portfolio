@@ -73,6 +73,8 @@ section{
     justify-content: flex-start;
     margin-bottom: 0;
     align-items: center;
+    position: relative;
+    z-index: 99;
     gap: 8px;
     li{
         background-color: $body-bg;
@@ -87,6 +89,20 @@ section{
           transition: 0.3s ease-in-out;
         }
     }
+    li.white{
+      background-color: transparent;
+      border-radius: 60px;
+      border: 1px solid $body-bg;
+      color: $body-bg;
+      padding: 6px 28px;
+      font-size: 0.75rem;
+      &:hover{
+        background-color: $primary-color;
+        color: $body-bg;
+        border: 1px solid $primary-color;
+        transition: 0.3s ease-in-out;
+      }
+  }
   }
   .arrow_next{
     cursor: pointer;
@@ -170,4 +186,11 @@ section{
 }
 .offcanvas.offcanvas-bottom{
   height: 100vh;
+}
+.blue_bg {
+  background-color: $primary-color;
+  padding: 4rem;
+  p{
+      color: $body-bg !important;
+  }
 }
