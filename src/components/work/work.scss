@@ -140,16 +140,21 @@
                     background-position: left;
                     background-size: cover;
                 }
-                &:nth-child(5) {
-                    background: url("../../images/card_bhn.png");
-                    background-repeat: no-repeat;
-                    background-position: left;
-                    background-size: cover;
-                }
                 &:nth-child(6) {
                     background: url("../../images/card_sng.jpg");
                     background-repeat: no-repeat;
                     background-position: left;
+                }
+                &:nth-child(7) {
+                    background: url("../../images/sngApp_1.jpg");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+                &:nth-child(8) {
+                    background: url("../../images/bhnApp_2.jpg");
+                    background-repeat: no-repeat;
+                    background-position: center;
                     background-size: cover;
                 }
             }
@@ -186,7 +191,11 @@
     }
 
     h3 {
-        font-size: $font-44;
+        a{
+            text-decoration: none;
+            font-size: $font-44;
+            color: $title-color;
+        }
     }
 
     p {

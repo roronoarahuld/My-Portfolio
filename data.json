@@ -165,6 +165,104 @@
                     }
                 ]
             }
+        ],
+        "workPage" :[
+            {
+                "title" : "Transforming Ideas into Impactful Designs",
+                "subTitle" : "Transforming ideas into visually striking and user-centric designs that blend creativity with purpose. With a keen eye for detail and a focus on functionality, I craft experiences that not only look great but also leave a lasting impact.",
+                "slides" : [
+                    {
+                        "id":1,
+                        "value": "antimYatra",
+                        "title": "Antim yatra",
+                        "projectHandled" : "Project handled during my time at Digitallatte",
+                        "webUrl" : "",
+                        "techUsed" : [
+                            {
+                                "image" : ""
+                            },
+                            {
+                                "image" : ""
+                            },
+                            {
+                                "image" : ""
+                            }
+                        ],
+                        "subtitle" : "Antim Yatra is a funeral services website I worked on at Digitallatte. Built with Bootstrap, it offers a seamless experience for end-to-end funeral arrangements. My role involved front-end development, ensuring smooth navigation, and implementing a responsive, user-friendly design that balanced functionality with sensitivity.",
+                        "workImages" : [
+                            {
+                                "id" : 1,
+                                "images" : [
+                                    {
+                                        "link" : ""
+                                    }
+                                ],
+                                "description" : ""
+                            }
+                        ]
+                    },
+                    {
+                        "id" : 2,
+                        "value": "puneriPaltan",
+                        "title": "Puneri Paltan",
+                        "projectHandled" : "Project handled during my time at Digitallatte",
+                        "webUrl" : "",
+                        "techUsed" : [
+                            {
+                                "image" : ""
+                            },
+                            {
+                                "image" : ""
+                            },
+                            {
+                                "image" : ""
+                            }
+                        ],
+                        "subtitle" : "Puneri Paltan is the official website of the Pro Kabaddi League team, designed to keep fans updated with the latest news, match schedules, player stats, and more. I had the opportunity to work on this project during my time at Digitallatte, where I was primarily responsible for updating content in real time during their matches. This involved managing live scores, team updates, match highlights, and other dynamic content to ensure an engaging experience for visitors. The website, built with a user-friendly interface, provided a seamless way for fans to stay connected with the team. Working on this project gave me hands-on experience in handling high-traffic sports websites, managing real-time content updates, and ensuring smooth performance during peak hours.",
+                        "workImages" : [
+                            {
+                                "id" : 1,
+                                "images" : [
+                                    {
+                                        "link" : ""
+                                    }
+                                ],
+                                "description" : ""
+                            }
+                        ]
+                    },
+                    {
+                        "id" : 3,
+                        "value": "staplesTruRed",
+                        "title": "Staples Tru Red",
+                        "projectHandled" : "Project handled during my time at MCcaNN WorldWideGroup",
+                        "webUrl" : "",
+                        "techUsed" : [
+                            {
+                                "image" : ""
+                            },
+                            {
+                                "image" : ""
+                            },
+                            {
+                                "image" : ""
+                            }
+                        ],
+                        "subtitle" : "During my time at McCann, I worked on Staples Tru Red, where we developed landing pages and banners for their marketing campaigns. My role involved ensuring visually appealing, responsive designs that aligned with the brand’s identity. This project helped me enhance my skills in front-end development and web asset optimization.",
+                        "workImages" : [
+                            {
+                                "id" : 1,
+                                "images" : [
+                                    {
+                                        "link" : ""
+                                    }
+                                ],
+                                "description" : ""
+                            }
+                        ]
+                    }
+                ]
+            }
         ]
     }
 ]

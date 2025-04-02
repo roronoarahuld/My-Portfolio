@@ -184,13 +184,62 @@ section{
 .textAnimate{
   animation: 0.5s textAnimate ease-in-out;
 }
-.offcanvas.offcanvas-bottom{
-  height: 100vh;
-}
 .blue_bg {
   background-color: $primary-color;
   padding: 4rem;
   p{
       color: $body-bg !important;
   }
+}
+#sngApp, #bhnApp{
+  img{
+    max-width: 300px;
+    &:not(:last-child){
+      margin-right: 16px;
+    }
+  }
+}
+.contact_div{
+  padding: 2rem;
+  h3{
+    font-size: $font-44;
+    color: $title-color;
+    margin-bottom: 1.25rem;
+    font-weight: $medium;
+  }
+  span{
+    font-size: 1.25rem;
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: $regular;
+  }
+  ul{
+    list-style: none;
+    li{
+      a{
+        text-decoration: none;
+        span{
+          font-weight: $regular;
+          font-size: 1.125rem;
+          color: $para-color;
+          padding-bottom: 1.25rem;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+// Bootstrap Overwritten
+.offcanvas-bottom{
+  height: 100vh !important;
+}
+.offcanvas-end{
+  border-left: none !important;
+}
+.offcanvas-backdrop.show{
+  opacity: 0.08 !important;
+}
+.fade{
+  transition: opacity 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
