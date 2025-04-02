@@ -165,6 +165,27 @@
                     }
                 ]
             }
+        ],
+        "workPage" :[
+            {
+                "title" : "Transforming Ideas into Impactful Designs",
+                "subTitle" : "Transforming ideas into visually striking and user-centric designs that blend creativity with purpose. With a keen eye for detail and a focus on functionality, I craft experiences that not only look great but also leave a lasting impact.",
+                "slides" : [
+                    {
+                        "id":1,
+                        "value": "antimYatra",
+                        "title": "Antim yatra",
+                        "techUsed" : [
+                            {
+                                "value" : "HTML"
+                            },
+                            {
+                                "value" : "CSS"
+                            }
+                        ]
+                    }
+                ]
+            }
         ]
     }
 ]

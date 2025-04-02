@@ -33,7 +33,7 @@ export default function Work() {
                                 </ul>
                             </div>
                         </button>
-                        <button id="slide-2" className="box" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvas" aria-controls="offCanvas" onClick={() => setOffcanvasvalue("puner Paltan")}>
+                        <button id="slide-2" className="box" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvas" aria-controls="offCanvas" onClick={() => setOffcanvasvalue("punerPaltan")}>
                             <h6>Puneri Paltan</h6>
                             <div className="tags_next_page">
                                 <ul>
@@ -43,7 +43,7 @@ export default function Work() {
                                 </ul>
                             </div>
                         </button>
-                        <button id="slide-3" className="box" type="button" data-bs-toggle="offcanvas" data-bs-target="#staplesTruRed" aria-controls="staplesTruRed">
+                        <button id="slide-3" className="box" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvas" aria-controls="offCanvas" onClick={() => setOffcanvasvalue("staplesTruRed")}>
                             <h6>Staples Tru Red</h6>
                             <div className="tags_next_page">
                                 <ul>
@@ -54,7 +54,7 @@ export default function Work() {
                                 </ul>
                             </div>
                         </button>
-                        <button id="slide-4" className="box" type="button" data-bs-toggle="offcanvas" data-bs-target="#jobsInEducation" aria-controls="jobsInEducation">
+                        <button id="slide-4" className="box" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvas" aria-controls="offCanvas" onClick={() => setOffcanvasvalue("jib")}>
                             <h6>Jobs in Education</h6>
                             <div className="tags_next_page">
                                 <ul>
@@ -65,7 +65,7 @@ export default function Work() {
                                 </ul>
                             </div>
                         </button>
-                        <button id="slide-5" className="box" type="button" data-bs-toggle="offcanvas" data-bs-target="#bhn" aria-controls="bhn">
+                        <button id="slide-5" className="box" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvas" aria-controls="offCanvas" onClick={() => setOffcanvasvalue("bhn")}>
                             <h6>Bharat Housing Network</h6>
                             <div className="tags_next_page">
                                 <ul>
@@ -75,7 +75,7 @@ export default function Work() {
                                 </ul>
                             </div>
                         </button>
-                        <button id="slide-7" className="box" type="button" data-bs-toggle="offcanvas" data-bs-target="#sngApp" aria-controls="sngApp">
+                        <button id="slide-7" className="box" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvas" aria-controls="OffCanvas" onClick={() => setOffcanvasvalue("sngApp")}>
                             <h6>Singularity App</h6>
                             <div className="tags_next_page">
                                 <ul>
@@ -83,7 +83,7 @@ export default function Work() {
                                 </ul>
                             </div>
                         </button>
-                        <button id="slide-8" className="box" type="button" data-bs-toggle="offcanvas" data-bs-target="#bhnApp" aria-controls="bhnApp">
+                        <button id="slide-8" className="box" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvas" aria-controls="offCanvas" onClick={() => setOffcanvasvalue("bhnApp")}>
                             <h6>BHN FieldForce</h6>
                             <div className="tags_next_page">
                                 <ul>
