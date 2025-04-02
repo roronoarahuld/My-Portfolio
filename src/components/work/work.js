@@ -70,7 +70,17 @@ export default function Work() {
                                 </ul>
                             </div>
                         </button>
-                        <div id="slide-6" className="box">6</div>
+                        <button id="slide-4" className="box" type="button" data-bs-toggle="offcanvas" data-bs-target="#sng" aria-controls="sng">
+                            <h6>Singualrity CreditWorld</h6>
+                            <div className="tags_next_page">
+                                <ul>
+                                    <li className="white">HTML</li>
+                                    <li className="white">CSS</li>
+                                    <li className="white">Angular</li>
+                                    <li className="white">Bootstrap</li>
+                                </ul>
+                            </div>
+                        </button>
                     </div>
                 </div>
             </section>
@@ -223,7 +233,7 @@ export default function Work() {
                         <div className="row mb-5">
                             <div className="col-md-4">
                                 <h3>Bharat Housing Network</h3>
-                                <p>Project handled during my time at HomeCapital PVT</p>
+                                <p>Project handled during my time at HomeCapital PVT LTD</p>
                             </div>
                             <div className="col-md-8">
                                 <p>Bharat Housing Network was a transformative project in my career, immersing me in an extremely fast-paced environment where delivering results was the top priority. As a Senior Software Engineer, I was responsible for revamping the entire portal, refining its design, and optimizing its structure for better scalability and performance.</p>
@@ -232,7 +242,7 @@ export default function Work() {
                                     <img src={require("../../images/html-5.png")} alt="skill-img" />
                                     <img src={require("../../images/css-3.png")} alt="skill-img" />
                                     <img src={require("../../images/js.png")} alt="skill-img" />
-                                    <img src={require("../../images/angular.png")} alt="skill-img" />
+                                    <img src={require("../../images/angular.png")} alt="skill-img" className="angular" />
                                 </div>
                             </div>
                         </div>
@@ -255,6 +265,48 @@ export default function Work() {
                             </div>
                             <div className="col-md-5">
                                 <p>This experience significantly enhanced my ability to adapt quickly to new technologies while working under high-pressure deadlines. It reinforced the importance of writing modular and maintainable code, improving UI/UX, and collaborating effectively within a fast-moving team. The project not only expanded my technical skill set but also sharpened my ability to deliver high-quality solutions efficiently.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="offcanvas offcanvas-bottom " tabIndex="-1" id="sng" aria-labelledby="offcanvasBottomLabel">
+                <div className="offcanvas-body small">
+                    <div className="slideContent">
+                        <div className="breadcrumb">
+                            <button className="mb-4 d-flex align-items-center" data-bs-dismiss="offcanvas" aria-label="Close">
+                                <img src={require("../../images/arrow-left.svg").default} />
+                                <span>Back to work</span>
+                            </button>
+                        </div>
+                        <div className="row mb-5">
+                            <div className="col-md-4">
+                                <h3>Singularity CreditWorld</h3>
+                                <p>Project handled during my time at HomeCapital PVT LTD</p>
+                            </div>
+                            <div className="col-md-8">
+                                <p>During my tenure at BHN, I had the opportunity to work on several projects, including developing the Singularity Creditworld website from scratch and enhancing its customer portal. Singularity Creditworld is an RBI-approved Non-Banking Financial Company (NBFC) offering a range of retail credit products and solutions in impact sectors. Their offerings include housing loans, property loans, solar loans, and personal loans, accessible through their mobile app.</p>
+                                <span>Technologies Used</span>
+                                <div className="tech_img">
+                                    <img src={require("../../images/html-5.png")} alt="skill-img" />
+                                    <img src={require("../../images/css-3.png")} alt="skill-img" />
+                                    <img src={require("../../images/js.png")} alt="skill-img" />
+                                    <img src={require("../../images/angular.png")} alt="skill-img" className="angular" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-12 blue_bg mb-5">
+                                <img src={require("../../images/singularity.png")} alt="Singualrity Landing Page" className="img-fluid" />
+                            </div>
+                        </div>
+                        <div className="row mt-5 pb-5">
+                            <div className="col-md-4">
+                                <p>The customer portal I worked on enables users to apply for loans, track their application status, and complete the necessary procedures seamlessly. This project provided me with valuable experience in building and improving financial service platforms that prioritize user experience and accessibility..</p>
+                            </div>
+                            <div className="col-md-8 blue_bg">
+                                <img src={require("../../images/singualrity_portal.png")} alt="Singularity Customer Portal" className="img-fluid" />
                             </div>
                         </div>
                     </div>

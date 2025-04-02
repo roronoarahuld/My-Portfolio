@@ -140,6 +140,18 @@
                     background-position: left;
                     background-size: cover;
                 }
+                &:nth-child(5) {
+                    background: url("../../images/card_bhn.png");
+                    background-repeat: no-repeat;
+                    background-position: left;
+                    background-size: cover;
+                }
+                &:nth-child(6) {
+                    background: url("../../images/card_sng.jpg");
+                    background-repeat: no-repeat;
+                    background-position: left;
+                    background-size: cover;
+                }
             }
         }
     }
@@ -200,6 +212,10 @@
             width: 30px;
             height: 30px;
             margin: 0 0.313rem;
+        }
+        img.angular{
+            width: 40px;
+            height: 40px;
         }
     }
 }
