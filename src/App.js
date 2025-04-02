@@ -6,6 +6,7 @@ import Work from './components/work/work';
 import { GlobalProvider, useGlobalContext } from './AppContext';
 import SlideAnimation from './commonComponents/SlideAnimation';
 import { ApiData } from './services/Api';
+import { ContactOffCanvas } from './commonComponents/Offcanvas';
 
 
 const PageContent = () => {
@@ -18,6 +19,7 @@ const PageContent = () => {
       {activeComponent === "Home" && <><SlideAnimation /><Home /></>}
       {activeComponent === "Work" && <><SlideAnimation /><Work /></>}
       {activeComponent === "About" && <><SlideAnimation /><About /></>}
+      <ContactOffCanvas/>
     </div>
   );
 };
