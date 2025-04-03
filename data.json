@@ -174,9 +174,23 @@
                     {
                         "id":1,
                         "value": "antimYatra",
-                        "title": "Antim yatra",
+                        "title": "Antim Yatra",
                         "projectHandled" : "Project handled during my time at Digitallatte",
                         "webUrl" : "",
+                        "workTag": [
+                            {
+                                "value" : "HTML"
+                            },
+                            {
+                                "value" : "CSS"
+                            },
+                            {
+                                "value" : "Bootstrap"
+                            },
+                            {
+                                "value" : "Javascript"
+                            }
+                        ],
                         "techUsed" : [
                             {
                                 "image" : ""
@@ -206,6 +220,17 @@
                         "value": "puneriPaltan",
                         "title": "Puneri Paltan",
                         "projectHandled" : "Project handled during my time at Digitallatte",
+                        "workTag": [
+                            {
+                                "value" : "HTML"
+                            },
+                            {
+                                "value" : "CSS"
+                            },
+                            {
+                                "value" : "Javascript"
+                            }
+                        ],
                         "webUrl" : "",
                         "techUsed" : [
                             {
@@ -236,6 +261,20 @@
                         "value": "staplesTruRed",
                         "title": "Staples Tru Red",
                         "projectHandled" : "Project handled during my time at MCcaNN WorldWideGroup",
+                        "workTag": [
+                            {
+                                "value" : "HTML"
+                            },
+                            {
+                                "value" : "CSS"
+                            },
+                            {
+                                "value" : "Bootstrap"
+                            },
+                            {
+                                "value" : "Javascript"
+                            }
+                        ],
                         "webUrl" : "",
                         "techUsed" : [
                             {
@@ -248,7 +287,7 @@
                                 "image" : ""
                             }
                         ],
-                        "subtitle" : "During my time at McCann, I worked on Staples Tru Red, where we developed landing pages and banners for their marketing campaigns. My role involved ensuring visually appealing, responsive designs that aligned with the brand’s identity. This project helped me enhance my skills in front-end development and web asset optimization.",
+                      
                         "workImages" : [
                             {
                                 "id" : 1,

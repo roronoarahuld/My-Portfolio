@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { SliderOffCanvas } from "../../commonComponents/Offcanvas";
+import { useApiData } from "../../services/Api";
 
 export default function Work() {
     const [isExpanded, setIsExpanded] = useState(false)
-    const [offcanvasValue , setOffcanvasvalue] = useState("")
-    useEffect(()=>{
+    const { storeData, loading } = useApiData()
+    const [offcanvasValue, setOffcanvasvalue] = useState("")
+    const slidesData = storeData[0]?.workPage[0]?.slides
+    useEffect(() => {
         console.log("Value", offcanvasValue)
-    },[offcanvasValue])
+        console.log("API", storeData[0]?.workPage)
+    }, [offcanvasValue])
     return (
         <>
             <section id="sectionWork">
@@ -14,14 +18,35 @@ export default function Work() {
                     <div className="row">
                         <div className="col-12">
                             <div className="content-section">
-                                <h1>Transforming Ideas into Impactful Designs</h1>
-                                <p>Transforming ideas into visually striking and user-centric designs that blend creativity with purpose. With a keen eye for detail and a focus on functionality, I craft experiences that not only look great but also leave a lasting impact.</p>
+                                <h1>{storeData[0]?.workPage[0]?.title}</h1>
+                                <p>{storeData[0]?.workPage[0]?.subTitle}</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="carousel">
                     <div className="slides">
+                        {
+                            slidesData.map((str) => {
+                                return (
+                                    <button key={str.id} id="slide-1" className="box" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvas" aria-controls="offCanvas" onClick={() => setOffcanvasvalue(str.value)}>
+                                        <h6>{str.title}</h6>
+                                        <div className="tags_next_page">
+                                            <ul>
+                                                {/* {
+                                                    str.tags.map((e)=>{
+                                                        return(
+                                                            <li key={e.value} className="white">{e.value}</li>
+                                                        )
+                                                    }
+                                                    )
+                                                } */}
+                                            </ul>
+                                        </div>
+                                    </button>
+                                )
+                            })
+                        }
                         <button id="slide-1" className="box" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvas" aria-controls="offCanvas" onClick={() => setOffcanvasvalue("antimYatra")}>
                             <h6>Antim yatra</h6>
                             <div className="tags_next_page">
@@ -107,7 +132,7 @@ export default function Work() {
                 </div>
             </section>
             {/* Open section */}
-            <SliderOffCanvas Attribute={offcanvasValue}/>
+            <SliderOffCanvas Attribute={offcanvasValue} />
 
 
             {/* 

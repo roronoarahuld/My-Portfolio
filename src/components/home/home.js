@@ -11,9 +11,6 @@ const Home = () => {
         setActiveComponent("About")
     };
     useEffect(()=>{
-        console.log("tags", storeData[0]?.homePage[0]?.nextPageDetails[0]?.tags)
-        var arr = storeData[0]?.homePage[0]?.nextPageDetails[0]?.tags
-        // console.log("new tags", result)
     }, [storeData])
     return (
         <>
