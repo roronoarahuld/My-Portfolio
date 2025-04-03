@@ -3,16 +3,16 @@
         "menuLogo": "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/kuroso.png",
         "menu": [
             {
-                "menu-name": "RAHUL"
+                "menuName": "RAHUL"
             },
             {
-                "menu-name": "About"
+                "menuName": "About"
             },
             {
-                "menu-name": "Work"
+                "menuName": "Work"
             },
             {
-                "menu-name": "Contact"
+                "menuName": "Contact"
             }
         ],
         "homePage": [

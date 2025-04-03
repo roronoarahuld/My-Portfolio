@@ -16,7 +16,7 @@ const Header = () => {
                                         <img alt="Logo" src={storeData[0]?.menuLogo} />
                                     </li>
                                     <li>
-                                        <h4>RAHUL</h4>
+                                        <h4>{storeData[0]?.menu[0]?.menuName}</h4>
                                     </li>
                                 </ul>
                             </a>
