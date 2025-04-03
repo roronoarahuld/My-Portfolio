@@ -1,6 +1,6 @@
 [
     {
-        "menuLogo": "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/kuroso.png",
+        "menuLogo": "./src/images/kuroso.png",
         "menu": [
             {
                 "menu-name": "RAHUL"

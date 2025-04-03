@@ -1,7 +1,8 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { useGlobalContext } from "../AppContext";
-
+import { useApiData } from "../services/Api";
 const Header = () => {
+    const {storeData , loading} = useApiData()
     const { setActiveComponent } = useGlobalContext()
     return (
         <>
@@ -12,7 +13,7 @@ const Header = () => {
                             <a onClick={() => { setActiveComponent("Home") }} href="#!">
                                 <ul>
                                     <li>
-                                        <img alt="Logo" src={require("../images/kuroso.png")} />
+                                        <img alt="Logo" src={require(storeData[0]?.menuLogo)} />
                                     </li>
                                     <li>
                                         <h4>RAHUL</h4>
