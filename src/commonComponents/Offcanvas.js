@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useApiData } from "../services/Api";
 
-type Props ={
-    Attribute: string
+type Props = {
+    Attribute: string,
+    title: string,
+    projectHandled: string,
+    subtitle: string
 }
 
 export const ContactOffCanvas = () => {
@@ -61,17 +65,38 @@ export const ContactOffCanvas = () => {
     )
 }
 
-export const SliderOffCanvas = ({Attribute}: Props) => {
-    console.log("answer", Attribute)
+export const SliderOffCanvas = ({ Attribute, title, projectHandled, subtitle }: Props) => {
+    const {storeData , loading} = useApiData()
     return (
         <div className="offcanvas offcanvas-bottom " tabIndex="-1" id="offCanvas" aria-labelledby="offcanvasBottomLabel">
             <div className="offcanvas-body small">
                 <div className="slideContent">
-                <div className="breadcrumb">
+                    <div className="breadcrumb">
                         <button className="mb-4 d-flex align-items-center" data-bs-dismiss="offcanvas" aria-label="Close">
                             <img src={require("../images/arrow-left.svg").default} />
                             <span>Back to work</span>
                         </button>
+                    </div>
+                    <div className="row mb-5">
+                        <div className="col-md-4">
+                            <h3>{title}</h3>
+                            <p>{projectHandled}</p>
+                        </div>
+                        <div className="col-md-8">
+                            <p>{subtitle}</p>
+                            <span>Technologies Used</span>
+                            <div className="tech_img">
+                                {/* <img src={require("../../images/html-5.png")} alt="skill-img" />
+                                <img src={require("../../images/css-3.png")} alt="skill-img" />
+                                <img src={require("../../images/js.png")} alt="skill-img" />
+                                <img src={require("../../images/bootstrap.png")} alt="skill-img" /> */}
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-12  mb-5">
+                            {/* <img src={require("../../images/antim_yatra.png")} alt="Antim Yatra Website" className="img-fluid" /> */}
+                        </div>
                     </div>
                 </div>
             </div>

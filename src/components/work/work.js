@@ -3,13 +3,29 @@ import { SliderOffCanvas } from "../../commonComponents/Offcanvas";
 import { useApiData } from "../../services/Api";
 
 export default function Work() {
-    const [isExpanded, setIsExpanded] = useState(false)
     const { storeData, loading } = useApiData()
+    const [title, setTitle] = useState("")
+    const [projectHandled, setProjectHandled] = useState("")
+    const [subtitle, setSubtitle] = useState("")
     const [offcanvasValue, setOffcanvasvalue] = useState("")
     const slidesData = storeData[0]?.workPage[0]?.slides
     useEffect(() => {
         console.log("Value", offcanvasValue)
         console.log("API", storeData[0]?.workPage[0]?.slides[0]?.workTag)
+        switch(offcanvasValue){
+            case("antimYatra"):
+                setTitle(storeData[0]?.workPage[0]?.slides[0]?.title)
+                setProjectHandled(storeData[0]?.workPage[0]?.slides[0]?.projectHandled)
+                setSubtitle(storeData[0]?.workPage[0]?.slides[0]?.subtitle)
+                break;
+            case("puneriPaltan"):
+                setTitle(storeData[0]?.workPage[0]?.slides[1]?.title)
+                setProjectHandled(storeData[0]?.workPage[0]?.slides[1]?.projectHandled)
+                setSubtitle(storeData[0]?.workPage[0]?.slides[1]?.subtitle)
+                break;
+            case(""):
+                console.log("something wrong")
+        }
     }, [offcanvasValue])
     return (
         <>
@@ -51,7 +67,12 @@ export default function Work() {
             </section>
             
             {/* OffCanvas section */}
-            <SliderOffCanvas Attribute={offcanvasValue} />
+            <SliderOffCanvas 
+                Attribute={offcanvasValue} 
+                title={title} 
+                projectHandled={projectHandled}
+                subtitle={subtitle}
+            />
 
 
             {/* 

@@ -176,7 +176,7 @@
                         "value": "antimYatra",
                         "title": "Antim Yatra",
                         "projectHandled" : "Project handled during my time at Digitallatte",
-                        "webUrl" : "",
+                        "webUrl" : "https://www.antimyatra.in/",
                         "workTag": [
                             {
                                 "value" : "HTML"
@@ -211,7 +211,7 @@
                                 "id" : 1,
                                 "images" : [
                                     {
-                                        "link" : ""
+                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/antim_yatra.png"
                                     }
                                 ],
                                 "description" : ""
