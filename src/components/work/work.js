@@ -29,17 +29,16 @@ export default function Work() {
                         {
                             slidesData.map((str) => {
                                 return (
-                                    <button key={str.id} id={"slide"+"-"+str.id} className="box" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvas" aria-controls="offCanvas" onClick={() => setOffcanvasvalue(str.value)}>
+                                    <button key={str.id} id={"slide" + "-" + str.id} className="box" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvas" aria-controls="offCanvas" onClick={() => setOffcanvasvalue(str.value)}>
                                         <h6>{str.title}</h6>
                                         <div className="tags_next_page">
                                             <ul>
                                                 {
-                                                    str.workTag.map((e)=>{
-                                                        return(
+                                                    str.workTag.map((e) => {
+                                                        return (
                                                             <li key={e.value} className="white">{e.value}</li>
                                                         )
-                                                    }
-                                                    )
+                                                    })
                                                 }
                                             </ul>
                                         </div>
@@ -47,91 +46,11 @@ export default function Work() {
                                 )
                             })
                         }
-                        {/* <button id="slide-1" className="box" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvas" aria-controls="offCanvas" onClick={() => setOffcanvasvalue("antimYatra")}>
-                            <h6>Antim yatra</h6>
-                            <div className="tags_next_page">
-                                <ul>
-                                    <li className="white">HTML</li>
-                                    <li className="white">CSS</li>
-                                    <li className="white">Bootstrap</li>
-                                    <li className="white">Javascript</li>
-                                </ul>
-                            </div>
-                        </button>
-                        <button id="slide-2" className="box" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvas" aria-controls="offCanvas" onClick={() => setOffcanvasvalue("punerPaltan")}>
-                            <h6>Puneri Paltan</h6>
-                            <div className="tags_next_page">
-                                <ul>
-                                    <li className="white">HTML</li>
-                                    <li className="white">CSS</li>
-                                    <li className="white">Javascript</li>
-                                </ul>
-                            </div>
-                        </button>
-                        <button id="slide-3" className="box" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvas" aria-controls="offCanvas" onClick={() => setOffcanvasvalue("staplesTruRed")}>
-                            <h6>Staples Tru Red</h6>
-                            <div className="tags_next_page">
-                                <ul>
-                                    <li className="white">HTML</li>
-                                    <li className="white">CSS</li>
-                                    <li className="white">Javascript</li>
-                                    <li className="white">Bootstrap</li>
-                                </ul>
-                            </div>
-                        </button>
-                        <button id="slide-4" className="box" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvas" aria-controls="offCanvas" onClick={() => setOffcanvasvalue("jib")}>
-                            <h6>Jobs in Education</h6>
-                            <div className="tags_next_page">
-                                <ul>
-                                    <li className="white">HTML</li>
-                                    <li className="white">CSS</li>
-                                    <li className="white">Material UI</li>
-                                    <li className="white">React</li>
-                                </ul>
-                            </div>
-                        </button>
-                        <button id="slide-5" className="box" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvas" aria-controls="offCanvas" onClick={() => setOffcanvasvalue("bhn")}>
-                            <h6>Bharat Housing Network</h6>
-                            <div className="tags_next_page">
-                                <ul>
-                                    <li className="white">HTML</li>
-                                    <li className="white">CSS</li>
-                                    <li className="white">Angular</li>
-                                </ul>
-                            </div>
-                        </button>
-                        <button id="slide-6" className="box" type="button" data-bs-toggle="offcanvas" data-bs-target="#sng" aria-controls="sng">
-                            <h6>Singualrity CreditWorld</h6>
-                            <div className="tags_next_page">
-                                <ul>
-                                    <li className="white">HTML</li>
-                                    <li className="white">CSS</li>
-                                    <li className="white">Angular</li>
-                                    <li className="white">Bootstrap</li>
-                                </ul>
-                            </div>
-                        </button>
-                        <button id="slide-7" className="box" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvas" aria-controls="OffCanvas" onClick={() => setOffcanvasvalue("sngApp")}>
-                            <h6>Singularity App</h6>
-                            <div className="tags_next_page">
-                                <ul>
-                                    <li className="white">React Native</li>
-                                </ul>
-                            </div>
-                        </button>
-                        <button id="slide-8" className="box" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvas" aria-controls="offCanvas" onClick={() => setOffcanvasvalue("bhnApp")}>
-                            <h6>BHN FieldForce</h6>
-                            <div className="tags_next_page">
-                                <ul>
-                                    <li className="white">React Native</li>
-                                    <li className="white">Figma</li>
-                                </ul>
-                            </div>
-                        </button> */}
                     </div>
                 </div>
             </section>
-            {/* Open section */}
+            
+            {/* OffCanvas section */}
             <SliderOffCanvas Attribute={offcanvasValue} />
 
 

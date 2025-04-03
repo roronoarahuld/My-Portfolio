@@ -1,6 +1,6 @@
 [
     {
-        "menuLogo": "./src/images/kuroso.png",
+        "menuLogo": "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/kuroso.png",
         "menu": [
             {
                 "menu-name": "RAHUL"
@@ -193,13 +193,16 @@
                         ],
                         "techUsed" : [
                             {
-                                "image" : ""
+                                "image" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/html-5.png"
                             },
                             {
-                                "image" : ""
+                                "image" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/css-3.png"
                             },
                             {
-                                "image" : ""
+                                "image" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/js.png"
+                            },
+                            {
+                                "image" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/bootstrap.png"
                             }
                         ],
                         "subtitle" : "Antim Yatra is a funeral services website I worked on at Digitallatte. Built with Bootstrap, it offers a seamless experience for end-to-end funeral arrangements. My role involved front-end development, ensuring smooth navigation, and implementing a responsive, user-friendly design that balanced functionality with sensitivity.",
