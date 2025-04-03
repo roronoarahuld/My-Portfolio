@@ -4,10 +4,11 @@ import { useApiData } from "../../services/Api";
 
 export default function Work() {
     const { storeData, loading } = useApiData()
+    const [offcanvasValue, setOffcanvasvalue] = useState("")
     const [title, setTitle] = useState("")
     const [projectHandled, setProjectHandled] = useState("")
     const [subtitle, setSubtitle] = useState("")
-    const [offcanvasValue, setOffcanvasvalue] = useState("")
+    const [projectImage, setProjectImage] = useState("")
     const slidesData = storeData[0]?.workPage[0]?.slides
     useEffect(() => {
         console.log("Value", offcanvasValue)

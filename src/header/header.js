@@ -13,7 +13,7 @@ const Header = () => {
                             <a onClick={() => { setActiveComponent("Home") }} href="#!">
                                 <ul>
                                     <li>
-                                        <img alt="Logo" src={require(storeData[0]?.menuLogo)} />
+                                        <img alt="Logo" src={storeData[0]?.menuLogo} />
                                     </li>
                                     <li>
                                         <h4>RAHUL</h4>
