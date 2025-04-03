@@ -24,13 +24,13 @@ const Header = () => {
                         <div className="col-6">
                             <ul className="menu-links">
                                 <li>
-                                    <a onClick={() => { setActiveComponent("About") }} href="#!">About Me</a>
+                                    <a onClick={() => { setActiveComponent("About") }} href="#!">{storeData[0]?.menu[1]?.menuName}</a>
                                 </li>
                                 <li>
-                                    <a onClick={() => { setActiveComponent("Work") }} href="#!">Work</a>
+                                    <a onClick={() => { setActiveComponent("Work") }} href="#!">{storeData[0]?.menu[2]?.menuName}</a>
                                 </li>
                                 <li>
-                                    <a data-bs-toggle="offcanvas" data-bs-target="#contactSection" aria-controls="contactSection" href="#!">Contact</a>
+                                    <a data-bs-toggle="offcanvas" data-bs-target="#contactSection" aria-controls="contactSection" href="#!">{storeData[0]?.menu[3]?.menuName}</a>
                                 </li>
                             </ul>
                         </div>

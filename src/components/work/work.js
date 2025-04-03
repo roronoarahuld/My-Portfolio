@@ -8,6 +8,7 @@ export default function Work() {
     const [title, setTitle] = useState("")
     const [projectHandled, setProjectHandled] = useState("")
     const [subtitle, setSubtitle] = useState("")
+    const [webUrl , setWebUrl] = useState("")
     const [projectImage, setProjectImage] = useState("")
     const slidesData = storeData[0]?.workPage[0]?.slides
     useEffect(() => {
@@ -18,11 +19,13 @@ export default function Work() {
                 setTitle(storeData[0]?.workPage[0]?.slides[0]?.title)
                 setProjectHandled(storeData[0]?.workPage[0]?.slides[0]?.projectHandled)
                 setSubtitle(storeData[0]?.workPage[0]?.slides[0]?.subtitle)
+                setWebUrl(storeData[0]?.workPage[0]?.slides[0]?.webUrl)
                 break;
             case("puneriPaltan"):
                 setTitle(storeData[0]?.workPage[0]?.slides[1]?.title)
                 setProjectHandled(storeData[0]?.workPage[0]?.slides[1]?.projectHandled)
                 setSubtitle(storeData[0]?.workPage[0]?.slides[1]?.subtitle)
+                setWebUrl(storeData[0]?.workPage[0]?.slides[1]?.webUrl)
                 break;
             case(""):
                 console.log("something wrong")
@@ -73,6 +76,7 @@ export default function Work() {
                 title={title} 
                 projectHandled={projectHandled}
                 subtitle={subtitle}
+                webUrl={webUrl}
             />
 
 

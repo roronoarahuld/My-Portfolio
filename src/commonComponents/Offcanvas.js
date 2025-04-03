@@ -5,7 +5,8 @@ type Props = {
     Attribute: string,
     title: string,
     projectHandled: string,
-    subtitle: string
+    subtitle: string,
+    webUrl: string
 }
 
 export const ContactOffCanvas = () => {
@@ -65,7 +66,7 @@ export const ContactOffCanvas = () => {
     )
 }
 
-export const SliderOffCanvas = ({ Attribute, title, projectHandled, subtitle }: Props) => {
+export const SliderOffCanvas = ({ Attribute, title, projectHandled, subtitle, webUrl }: Props) => {
     const {storeData , loading} = useApiData()
     return (
         <div className="offcanvas offcanvas-bottom " tabIndex="-1" id="offCanvas" aria-labelledby="offcanvasBottomLabel">
@@ -79,7 +80,7 @@ export const SliderOffCanvas = ({ Attribute, title, projectHandled, subtitle }: 
                     </div>
                     <div className="row mb-5">
                         <div className="col-md-4">
-                            <h3>{title}</h3>
+                            <h3><a href={webUrl} target="_blank">{title}</a></h3>
                             <p>{projectHandled}</p>
                         </div>
                         <div className="col-md-8">
