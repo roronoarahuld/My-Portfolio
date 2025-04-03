@@ -9,7 +9,7 @@ export default function Work() {
     const slidesData = storeData[0]?.workPage[0]?.slides
     useEffect(() => {
         console.log("Value", offcanvasValue)
-        console.log("API", storeData[0]?.workPage)
+        console.log("API", storeData[0]?.workPage[0]?.slides[0]?.workTag)
     }, [offcanvasValue])
     return (
         <>
@@ -29,25 +29,25 @@ export default function Work() {
                         {
                             slidesData.map((str) => {
                                 return (
-                                    <button key={str.id} id="slide-1" className="box" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvas" aria-controls="offCanvas" onClick={() => setOffcanvasvalue(str.value)}>
+                                    <button key={str.id} id={"slide"+"-"+str.id} className="box" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvas" aria-controls="offCanvas" onClick={() => setOffcanvasvalue(str.value)}>
                                         <h6>{str.title}</h6>
                                         <div className="tags_next_page">
                                             <ul>
-                                                {/* {
-                                                    str.tags.map((e)=>{
+                                                {
+                                                    str.workTag.map((e)=>{
                                                         return(
                                                             <li key={e.value} className="white">{e.value}</li>
                                                         )
                                                     }
                                                     )
-                                                } */}
+                                                }
                                             </ul>
                                         </div>
                                     </button>
                                 )
                             })
                         }
-                        <button id="slide-1" className="box" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvas" aria-controls="offCanvas" onClick={() => setOffcanvasvalue("antimYatra")}>
+                        {/* <button id="slide-1" className="box" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCanvas" aria-controls="offCanvas" onClick={() => setOffcanvasvalue("antimYatra")}>
                             <h6>Antim yatra</h6>
                             <div className="tags_next_page">
                                 <ul>
@@ -127,7 +127,7 @@ export default function Work() {
                                     <li className="white">Figma</li>
                                 </ul>
                             </div>
-                        </button>
+                        </button> */}
                     </div>
                 </div>
             </section>

@@ -299,6 +299,193 @@
                                 "description" : ""
                             }
                         ]
+                    },
+                    {
+                        "id" : 4,
+                        "value": "jib",
+                        "title": "Jobs in Education",
+                        "projectHandled" : "Project handled during my time at AnandPushp TechnoLogy",
+                        "workTag": [
+                            {
+                                "value" : "HTML"
+                            },
+                            {
+                                "value" : "CSS"
+                            },
+                            {
+                                "value" : "Material UI"
+                            },
+                            {
+                                "value" : "React"
+                            }
+                        ],
+                        "webUrl" : "",
+                        "techUsed" : [
+                            {
+                                "image" : ""
+                            },
+                            {
+                                "image" : ""
+                            },
+                            {
+                                "image" : ""
+                            }
+                        ],
+                      
+                        "workImages" : [
+                            {
+                                "id" : 1,
+                                "images" : [
+                                    {
+                                        "link" : ""
+                                    }
+                                ],
+                                "description" : ""
+                            }
+                        ]
+                    },
+                    {
+                        "id" : 5,
+                        "value": "bhn",
+                        "title": "Bharat Housing Network",
+                        "projectHandled" : "Project handled during my time at HomeCapital PVT LTD",
+                        "workTag": [
+                            {
+                                "value" : "HTML"
+                            },
+                            {
+                                "value" : "CSS"
+                            },
+                            {
+                                "value" : "Angular"
+                            }
+                        ],
+                        "webUrl" : "",
+                        "techUsed" : [
+                            {
+                                "image" : ""
+                            },
+                            {
+                                "image" : ""
+                            },
+                            {
+                                "image" : ""
+                            }
+                        ],
+                      
+                        "workImages" : [
+                            {
+                                "id" : 1,
+                                "images" : [
+                                    {
+                                        "link" : ""
+                                    }
+                                ],
+                                "description" : ""
+                            }
+                        ]
+                    },
+                    {
+                        "id" : 6,
+                        "value": "sng",
+                        "title": "Singualrity CreditWorld",
+                        "projectHandled" : "Project handled during my time at Singularity CreditWorld",
+                        "workTag": [
+                            {
+                                "value" : "HTML"
+                            },
+                            {
+                                "value" : "CSS"
+                            },
+                            {
+                                "value" : "Angular"
+                            }
+                        ],
+                        "webUrl" : "",
+                        "techUsed" : [
+                            {
+                                "image" : ""
+                            },
+                            {
+                                "image" : ""
+                            },
+                            {
+                                "image" : ""
+                            }
+                        ],
+                      
+                        "workImages" : [
+                            {
+                                "id" : 1,
+                                "images" : [
+                                    {
+                                        "link" : ""
+                                    }
+                                ],
+                                "description" : ""
+                            }
+                        ]
+                    },
+                    {
+                        "id" : 7,
+                        "value": "sngApp",
+                        "title": "Singualrity App",
+                        "projectHandled" : "Project handled during my time at Singularity CreditWorld",
+                        "workTag": [
+                            {
+                                "value" : "React Native"
+                            }
+                        ],
+                        "webUrl" : "",
+                        "techUsed" : [
+                            {
+                                "image" : ""
+                            }
+                        ],
+                      
+                        "workImages" : [
+                            {
+                                "id" : 1,
+                                "images" : [
+                                    {
+                                        "link" : ""
+                                    }
+                                ],
+                                "description" : ""
+                            }
+                        ]
+                    },
+                    {
+                        "id" : 8,
+                        "value": "bhnApp",
+                        "title": "BHN FieldForce",
+                        "projectHandled" : "Project handled during my time at Singularity CreditWorld",
+                        "workTag": [
+                            {
+                                "value" : "React Native"
+                            },
+                            {
+                                "value" : "Figma"
+                            }
+                        ],
+                        "webUrl" : "",
+                        "techUsed" : [
+                            {
+                                "image" : ""
+                            }
+                        ],
+                      
+                        "workImages" : [
+                            {
+                                "id" : 1,
+                                "images" : [
+                                    {
+                                        "link" : ""
+                                    }
+                                ],
+                                "description" : ""
+                            }
+                        ]
                     }
                 ]
             }
