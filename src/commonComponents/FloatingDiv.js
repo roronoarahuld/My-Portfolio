@@ -30,10 +30,10 @@ const FloatingDiv = ({ onPress, title, subtitle, image, tags }: Props) => {
                 <div className='col-6'>
                     <div className='tags_next_page'>
                         <ul>
-                            {tags.map((str) => {
+                            {tags?.map((str) => {
                                 return (
                                     <li key={str}>
-                                        {str}
+                                        {str?.tagName}
                                     </li>
                                 )
                             })}

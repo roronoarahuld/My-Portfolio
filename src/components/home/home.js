@@ -7,11 +7,19 @@ export const aboutContext = createContext()
 const Home = () => {
     const { setActiveComponent } = useGlobalContext();
     const {storeData , loading} = useApiData()
+    const [heading, setHeading] = useState("")
     const handleClick = () => {
         setActiveComponent("About")
     };
     useEffect(()=>{
-    }, [storeData])
+        const newhead = heading.split(" ")
+        console.log("new", newhead)
+    }, [])
+
+    useEffect(()=>{
+        setHeading(storeData[0]?.homePage[0]?.title)
+        
+    },[storeData, heading])
     return (
         <>
             <section id="sectionHome">
@@ -20,7 +28,8 @@ const Home = () => {
                         <div className="col-6 content-section">
                             <div className="content-area">
                                 <h1>
-                                    <span>HEY!</span> I am <span>Rahul</span>,<br /> A <span>Front-End Developer</span> based in <span>Mumbai</span>
+                                    {heading}
+                                    {/* <span>HEY!</span> I am <span>Rahul</span>,<br /> A <span>Front-End Developer</span> based in <span>Mumbai</span> */}
                                 </h1>
                                 <p>{storeData[0]?.homePage[0]?.subtitle}</p>
                                 <ul>
@@ -56,7 +65,7 @@ const Home = () => {
                         title={storeData[0]?.homePage[0]?.nextPageDetails[0]?.title}
                         subtitle={storeData[0]?.homePage[0]?.nextPageDetails[0]?.subtitle}
                         image={storeData[0]?.homePage[0]?.nextPageDetails[0]?.image}
-                        tags={["Work Experience", "UI / UX", "UI Developer", "Front End Developer", "React Native", "CSS"]}
+                        tags={storeData[0]?.homePage[0]?.nextPageDetails[0]?.tags}
                     />
                 </div>
             </section>
