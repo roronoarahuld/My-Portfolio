@@ -1,12 +1,13 @@
-import React, { useEffect, useState } from "react";
-import { useApiData } from "../services/Api";
+import React from "react";
 
 type Props = {
     Attribute: string,
     title: string,
     projectHandled: string,
     subtitle: string,
-    webUrl: string
+    webUrl: string,
+    techUsed: array[],
+    projectImage: array[]
 }
 
 export const ContactOffCanvas = () => {
@@ -66,8 +67,8 @@ export const ContactOffCanvas = () => {
     )
 }
 
-export const SliderOffCanvas = ({ Attribute, title, projectHandled, subtitle, webUrl }: Props) => {
-    const {storeData , loading} = useApiData()
+export const SliderOffCanvas = ({ Attribute, title, projectHandled, subtitle, webUrl, techUsed, projectImage }: Props) => {
+    console.log("array", projectImage)
     return (
         <div className="offcanvas offcanvas-bottom " tabIndex="-1" id="offCanvas" aria-labelledby="offcanvasBottomLabel">
             <div className="offcanvas-body small">
@@ -87,16 +88,25 @@ export const SliderOffCanvas = ({ Attribute, title, projectHandled, subtitle, we
                             <p>{subtitle}</p>
                             <span>Technologies Used</span>
                             <div className="tech_img">
-                                {/* <img src={require("../../images/html-5.png")} alt="skill-img" />
-                                <img src={require("../../images/css-3.png")} alt="skill-img" />
-                                <img src={require("../../images/js.png")} alt="skill-img" />
-                                <img src={require("../../images/bootstrap.png")} alt="skill-img" /> */}
+                                {
+                                    techUsed.map((img)=>{
+                                        return(
+                                            <img src={img.image}/>
+                                        )
+                                    })
+                                }
                             </div>
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-12  mb-5">
-                            {/* <img src={require("../../images/antim_yatra.png")} alt="Antim Yatra Website" className="img-fluid" /> */}
+                            {
+                                projectImage.map((primg)=>{
+                                    return(
+                                        <img src={primg?.images[0]?.link} className="img-fluid"/>
+                                    )
+                                })
+                            }
                         </div>
                     </div>
                 </div>

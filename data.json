@@ -119,13 +119,13 @@
                         "skillName": "Design Tools",
                         "skillImages": [
                             {
-                                "image": ""
+                                "image": "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/figma.png"
                             },
                             {
-                                "image": ""
+                                "image": "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/photoshop.png"
                             },
                             {
-                                "image": ""
+                                "image": "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/illustrator.png"
                             }
                         ]
                     },
@@ -133,22 +133,22 @@
                         "skillName": "Front End Development",
                         "skillImages": [
                             {
-                                "image": ""
+                                "image": "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/html-5.png"
                             },
                             {
-                                "image": ""
+                                "image": "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/css-3.png"
                             },
                             {
-                                "image": ""
+                                "image": "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/js.png"
                             },
                             {
-                                "image": ""
+                                "image": "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/bootstrap.png"
                             },
                             {
-                                "image": ""
+                                "image": "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/material-ui.png"
                             },
                             {
-                                "image": ""
+                                "image": "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/tailwind.png"
                             }
                         ]
                     },
@@ -156,10 +156,10 @@
                         "skillName": "Frameworks & Libraries",
                         "skillImages": [
                             {
-                                "image": ""
+                                "image": "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/react.png"
                             },
                             {
-                                "image": ""
+                                "image": "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/physics.png"
                             }
                         ]
                     }
@@ -234,16 +234,16 @@
                                 "value" : "Javascript"
                             }
                         ],
-                        "webUrl" : "",
+                        "webUrl" : "https://www.puneripaltan.com/",
                         "techUsed" : [
                             {
-                                "image" : ""
+                                "image" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/html-5.png"
                             },
                             {
-                                "image" : ""
+                                "image" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/css-3.png"
                             },
                             {
-                                "image" : ""
+                                "image" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/js.png"
                             }
                         ],
                         "subtitle" : "Puneri Paltan is the official website of the Pro Kabaddi League team, designed to keep fans updated with the latest news, match schedules, player stats, and more. I had the opportunity to work on this project during my time at Digitallatte, where I was primarily responsible for updating content in real time during their matches. This involved managing live scores, team updates, match highlights, and other dynamic content to ensure an engaging experience for visitors. The website, built with a user-friendly interface, provided a seamless way for fans to stay connected with the team. Working on this project gave me hands-on experience in handling high-traffic sports websites, managing real-time content updates, and ensuring smooth performance during peak hours.",
@@ -252,7 +252,7 @@
                                 "id" : 1,
                                 "images" : [
                                     {
-                                        "link" : ""
+                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/puneri_paltan_1.png"
                                     }
                                 ],
                                 "description" : ""
@@ -278,25 +278,25 @@
                                 "value" : "Javascript"
                             }
                         ],
-                        "webUrl" : "",
+                        "webUrl" : "https://www.staples.ca/a/content/tru-red",
                         "techUsed" : [
                             {
-                                "image" : ""
+                                "image" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/html-5.png"
                             },
                             {
-                                "image" : ""
+                                "image" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/css-3.png"
                             },
                             {
-                                "image" : ""
+                                "image" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/js.png"
                             }
                         ],
-                      
+                        "subtitle" : "During my time at McCann, I worked on Staples Tru Red, where we developed landing pages and banners for their marketing campaigns. My role involved ensuring visually appealing, responsive designs that aligned with the brand’s identity. This project helped me enhance my skills in front-end development and web asset optimization.",
                         "workImages" : [
                             {
                                 "id" : 1,
                                 "images" : [
                                     {
-                                        "link" : ""
+                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/staples_tru_red.png"
                                     }
                                 ],
                                 "description" : ""
@@ -322,25 +322,31 @@
                                 "value" : "React"
                             }
                         ],
-                        "webUrl" : "",
+                        "webUrl" : "https://www.jobsineducation.net/",
                         "techUsed" : [
                             {
-                                "image" : ""
+                                "image" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/html-5.png"
                             },
                             {
-                                "image" : ""
+                                "image" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/css-3.png"
                             },
                             {
-                                "image" : ""
+                                "image" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/js.png"
+                            },
+                            {
+                                "image" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/react.png"
+                            },
+                            {
+                                "image" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/material-ui.png"
                             }
                         ],
-                      
+                        "subtitle" : "At Jobs in Education, a startup where I worked as a UI Developer, I handled three projects, focusing on front-end development. I utilized my primary skills—HTML, CSS, JavaScript, and Bootstrap—to build responsive and user-friendly interfaces. Additionally, I had the opportunity to learn and work with React, expanding my expertise in modern web development. This experience helped me enhance my technical skills while contributing to the growth of the platform.",
                         "workImages" : [
                             {
                                 "id" : 1,
                                 "images" : [
                                     {
-                                        "link" : ""
+                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/JIB.png"
                                     }
                                 ],
                                 "description" : ""
@@ -363,28 +369,52 @@
                                 "value" : "Angular"
                             }
                         ],
-                        "webUrl" : "",
+                        "webUrl" : "https://bharathousingnetwork.com/",
                         "techUsed" : [
                             {
-                                "image" : ""
+                                "image" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/html-5.png"
                             },
                             {
-                                "image" : ""
+                                "image" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/css-3.png"
                             },
                             {
-                                "image" : ""
+                                "image" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/js.png"
+                            },
+                            {
+                                "image" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/bootstrap.png"
+                            },
+                            {
+                                "image" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/angular.png"
                             }
                         ],
-                      
+                        "subtitle" : "Bharat Housing Network was a transformative project in my career, immersing me in an extremely fast-paced environment where delivering results was the top priority. As a Senior Software Engineer, I was responsible for revamping the entire portal, refining its design, and optimizing its structure for better scalability and performance.",
                         "workImages" : [
                             {
                                 "id" : 1,
                                 "images" : [
                                     {
-                                        "link" : ""
+                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/bhn_1.png"
                                     }
                                 ],
                                 "description" : ""
+                            },
+                            {
+                                "id" : 2,
+                                "images" : [
+                                    {
+                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/bhn_2.png"
+                                    }
+                                ],
+                                "description" : "While I had a strong foundation in HTML and CSS, this project pushed me to become even more efficient in front-end development. Additionally, I took the initiative to learn Angular, which allowed me to contribute to Angular-related tasks and improve my problem-solving approach. My key contributions included setting up the theme, designing reusable components, and ensuring a consistent and scalable UI framework for future developments."
+                            },
+                            {
+                                "id" : 3,
+                                "images" : [
+                                    {
+                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/bhn_3.png"
+                                    }
+                                ],
+                                "description" : "This experience significantly enhanced my ability to adapt quickly to new technologies while working under high-pressure deadlines. It reinforced the importance of writing modular and maintainable code, improving UI/UX, and collaborating effectively within a fast-moving team. The project not only expanded my technical skill set but also sharpened my ability to deliver high-quality solutions efficiently."
                             }
                         ]
                     },
@@ -392,7 +422,7 @@
                         "id" : 6,
                         "value": "sng",
                         "title": "Singualrity CreditWorld",
-                        "projectHandled" : "Project handled during my time at Singularity CreditWorld",
+                        "projectHandled" : "Project handled during my time at HomeCapital PVT LTD",
                         "workTag": [
                             {
                                 "value" : "HTML"
@@ -404,28 +434,43 @@
                                 "value" : "Angular"
                             }
                         ],
-                        "webUrl" : "",
+                        "webUrl" : "https://singularitycredit.com/",
                         "techUsed" : [
                             {
-                                "image" : ""
+                                "image" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/html-5.png"
                             },
                             {
-                                "image" : ""
+                                "image" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/css-3.png"
                             },
                             {
-                                "image" : ""
+                                "image" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/js.png"
+                            },
+                            {
+                                "image" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/bootstrap.png"
+                            },
+                            {
+                                "image" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/angular.png"
                             }
                         ],
-                      
+                        "subtitle" : "During my tenure at BHN, I had the opportunity to work on several projects, including developing the Singularity Creditworld website from scratch and enhancing its customer portal. Singularity Creditworld is an RBI-approved Non-Banking Financial Company (NBFC) offering a range of retail credit products and solutions in impact sectors. Their offerings include housing loans, property loans, solar loans, and personal loans, accessible through their mobile app.",
                         "workImages" : [
                             {
                                 "id" : 1,
                                 "images" : [
                                     {
-                                        "link" : ""
+                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/singularity.png"
                                     }
                                 ],
                                 "description" : ""
+                            },
+                            {
+                                "id" : 2,
+                                "images" : [
+                                    {
+                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/singularity_portal.png"
+                                    }
+                                ],
+                                "description" : "The customer portal I worked on enables users to apply for loans, track their application status, and complete the necessary procedures seamlessly. This project provided me with valuable experience in building and improving financial service platforms that prioritize user experience and accessibility."
                             }
                         ]
                     },
@@ -433,28 +478,52 @@
                         "id" : 7,
                         "value": "sngApp",
                         "title": "Singualrity App",
-                        "projectHandled" : "Project handled during my time at Singularity CreditWorld",
+                        "projectHandled" : "Project handled during my time at HomeCapital PVT LTD",
                         "workTag": [
                             {
                                 "value" : "React Native"
                             }
                         ],
-                        "webUrl" : "",
+                        "webUrl" : "https://play.google.com/store/apps/details?id=com.singularitycredit.app",
                         "techUsed" : [
                             {
-                                "image" : ""
+                                "image" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/react.png"
                             }
                         ],
-                      
+                        "subtitle" : "Singularity App was a major turning point in my career, marking my transition from a Web Developer to an App Developer. This project pushed me beyond my comfort zone as I took on the responsibility of building the entire UI and frontend while simultaneously learning React Native. It was a hands-on experience where I had to quickly grasp mobile development concepts, optimize performance, and ensure a seamless user experience.",
                         "workImages" : [
                             {
                                 "id" : 1,
                                 "images" : [
                                     {
-                                        "link" : ""
+                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/sngApp_1.jpg"
+                                    },
+                                    {
+                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/sngApp_2.jpg"
+                                    },
+                                    {
+                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/sngApp_3.jpg"
+                                    },
+                                    {
+                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/sngApp_4.jpg"
+                                    },
+                                    {
+                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/sngApp_5.jpg"
                                     }
                                 ],
                                 "description" : ""
+                            },
+                            {
+                                "id" : 2,
+                                "images" : [
+                                    {
+                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/sngApp_6.jpg"
+                                    },
+                                    {
+                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/sngApp_7.jpg"
+                                    }
+                                ],
+                                "description" : "Initially, our team consisted of three members (including myself), but as the project evolved and my skills grew, I was promoted to Team Leader, leading a team of six. With this expanded team, we not only enhanced and optimized the Singularity App but also started working on multiple other app development projects. The transition from being an individual contributor to a team leader was both challenging and rewarding, as I learned to mentor developers, manage workflows, and oversee project execution efficiently. This experience refined my ability to design scalable UI components, improve application performance, and collaborate across teams. More importantly, it solidified my expertise in React Native, making me confident in handling mobile app development from the ground up. Singularity App was more than just a project—it was the stepping stone that helped me grow into a full-fledged app developer and leader."
                             }
                         ]
                     },
@@ -462,7 +531,7 @@
                         "id" : 8,
                         "value": "bhnApp",
                         "title": "BHN FieldForce",
-                        "projectHandled" : "Project handled during my time at Singularity CreditWorld",
+                        "projectHandled" : "Project handled during my time at HomeCapital PVT LTD",
                         "workTag": [
                             {
                                 "value" : "React Native"
@@ -471,22 +540,43 @@
                                 "value" : "Figma"
                             }
                         ],
-                        "webUrl" : "",
+                        "webUrl" : "https://play.google.com/store/apps/details?id=com.homeville.fieldforce",
                         "techUsed" : [
                             {
-                                "image" : ""
+                                "image" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/react.png"
+                            },
+                            {
+                                "image" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/figma.png"
                             }
                         ],
-                      
+                        "subtitle" : "BHN Fieldforce App was the second major app development project my team and I worked on after successfully delivering the Singularity App. With a growing sense of responsibility and leadership, I took charge of the UI and frontend development while ensuring a seamless user experience. Unlike our previous project, we faced a shortage of designers, which pushed me to step up and design a minimal prototype myself. This was a new challenge, but it gave me deeper insight into UI/UX design principles and helped streamline development.",
                         "workImages" : [
                             {
                                 "id" : 1,
                                 "images" : [
                                     {
-                                        "link" : ""
+                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/bhnApp_1.jpg"
+                                    },
+                                    {
+                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/bhnApp_2.jpg"
+                                    },
+                                    {
+                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/bhnApp_3.jpg"
+                                    },
+                                    {
+                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/bhnApp_4.jpg"
                                     }
                                 ],
                                 "description" : ""
+                            },
+                            {
+                                "id" : 2,
+                                "images" : [
+                                    {
+                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/bhnApp_5.jpg"
+                                    }
+                                ],
+                                "description" : "With my team working alongside me, we efficiently translated the prototype into a fully functional mobile application using React Native. We focused on creating reusable components, optimizing performance, and ensuring smooth navigation to deliver a polished and intuitive experience. The project further strengthened my leadership skills as I guided my team through problem-solving, debugging, and improving overall efficiency. This experience reinforced my ability to adapt to challenges, think creatively under constraints, and execute projects effectively even with limited resources. It also deepened my expertise in mobile app development and taught me the importance of balancing design, development, and team management to deliver high-quality applications."
                             }
                         ]
                     }

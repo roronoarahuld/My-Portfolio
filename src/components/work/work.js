@@ -9,23 +9,27 @@ export default function Work() {
     const [projectHandled, setProjectHandled] = useState("")
     const [subtitle, setSubtitle] = useState("")
     const [webUrl , setWebUrl] = useState("")
-    const [projectImage, setProjectImage] = useState("")
+    const [projectImage, setProjectImage] = useState([])
+    const [techUsed, setTechUsed] = useState([])
     const slidesData = storeData[0]?.workPage[0]?.slides
     useEffect(() => {
         console.log("Value", offcanvasValue)
-        console.log("API", storeData[0]?.workPage[0]?.slides[0]?.workTag)
         switch(offcanvasValue){
             case("antimYatra"):
                 setTitle(storeData[0]?.workPage[0]?.slides[0]?.title)
                 setProjectHandled(storeData[0]?.workPage[0]?.slides[0]?.projectHandled)
                 setSubtitle(storeData[0]?.workPage[0]?.slides[0]?.subtitle)
                 setWebUrl(storeData[0]?.workPage[0]?.slides[0]?.webUrl)
+                setTechUsed(storeData[0]?.workPage[0]?.slides[0]?.techUsed)
+                setProjectImage(storeData[0]?.workPage[0]?.slides[0]?.workImages)
                 break;
             case("puneriPaltan"):
                 setTitle(storeData[0]?.workPage[0]?.slides[1]?.title)
                 setProjectHandled(storeData[0]?.workPage[0]?.slides[1]?.projectHandled)
                 setSubtitle(storeData[0]?.workPage[0]?.slides[1]?.subtitle)
                 setWebUrl(storeData[0]?.workPage[0]?.slides[1]?.webUrl)
+                setTechUsed(storeData[0]?.workPage[0]?.slides[1]?.techUsed)
+                setProjectImage(storeData[0]?.workPage[0]?.slides[1]?.workImages)
                 break;
             case(""):
                 console.log("something wrong")
@@ -77,6 +81,8 @@ export default function Work() {
                 projectHandled={projectHandled}
                 subtitle={subtitle}
                 webUrl={webUrl}
+                techUsed={techUsed}
+                projectImage={projectImage}
             />
 
 

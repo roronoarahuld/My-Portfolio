@@ -1,4 +1,3 @@
-import { createContext, useContext, useEffect, useState } from "react";
 import { useGlobalContext } from "../AppContext";
 import { useApiData } from "../services/Api";
 const Header = () => {
