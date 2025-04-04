@@ -71,7 +71,7 @@ export const SliderOffCanvas = ({ Attribute, title, projectHandled, subtitle, we
     console.log("array", projectImage)
     return (
         <div className="offcanvas offcanvas-bottom " tabIndex="-1" id="offCanvas" aria-labelledby="offcanvasBottomLabel">
-            <div className="offcanvas-body small">
+            <div className="offcanvas-body small" id={Attribute}>
                 <div className="slideContent">
                     <div className="breadcrumb">
                         <button className="mb-4 d-flex align-items-center" data-bs-dismiss="offcanvas" aria-label="Close">
@@ -89,9 +89,9 @@ export const SliderOffCanvas = ({ Attribute, title, projectHandled, subtitle, we
                             <span>Technologies Used</span>
                             <div className="tech_img">
                                 {
-                                    techUsed.map((img)=>{
-                                        return(
-                                            <img src={img.image}/>
+                                    techUsed.map((img) => {
+                                        return (
+                                            <img src={img.image} />
                                         )
                                     })
                                 }
@@ -99,14 +99,42 @@ export const SliderOffCanvas = ({ Attribute, title, projectHandled, subtitle, we
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-12  mb-5">
+                        <div className="col-12 mb-5 d-flex justify-content-center flex-wrap">
                             {
-                                projectImage.map((primg)=>{
+                                projectImage[0]?.images?.map((primg)=>{
                                     return(
-                                        <img src={primg?.images[0]?.link} className="img-fluid"/>
+                                        <img src={primg?.link} className="img-fluid" />
                                     )
                                 })
                             }
+                        </div>
+                    </div>
+                    <div className="row mt-5 pb-5">
+                        <div className="col-md-6">
+                            <p>{projectImage[1]?.description}</p>
+                        </div>
+                        <div className="col-md-6 d-flex justify-content-center flex-wrap">
+                            {
+                                projectImage[1]?.images?.map((primg)=>{
+                                    return(
+                                        <img src={primg?.link} className="img-fluid" />
+                                    )
+                                })
+                            }
+                        </div>
+                    </div>
+                    <div className="row mt-5">
+                        <div className="col-md-6">
+                            {
+                                projectImage[2]?.images?.map((primg)=>{
+                                    return(
+                                        <img src={primg?.link} className="img-fluid" />
+                                    )
+                                })
+                            }
+                        </div>
+                        <div className="col-md-6">
+                        <p>{projectImage[2]?.description}</p>
                         </div>
                     </div>
                 </div>

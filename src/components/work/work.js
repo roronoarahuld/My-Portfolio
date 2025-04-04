@@ -31,6 +31,54 @@ export default function Work() {
                 setTechUsed(storeData[0]?.workPage[0]?.slides[1]?.techUsed)
                 setProjectImage(storeData[0]?.workPage[0]?.slides[1]?.workImages)
                 break;
+            case("staplesTruRed"):
+                setTitle(storeData[0]?.workPage[0]?.slides[2]?.title)
+                setProjectHandled(storeData[0]?.workPage[0]?.slides[2]?.projectHandled)
+                setSubtitle(storeData[0]?.workPage[0]?.slides[2]?.subtitle)
+                setWebUrl(storeData[0]?.workPage[0]?.slides[2]?.webUrl)
+                setTechUsed(storeData[0]?.workPage[0]?.slides[2]?.techUsed)
+                setProjectImage(storeData[0]?.workPage[0]?.slides[2]?.workImages)
+                break;
+            case("jib"):
+                setTitle(storeData[0]?.workPage[0]?.slides[3]?.title)
+                setProjectHandled(storeData[0]?.workPage[0]?.slides[3]?.projectHandled)
+                setSubtitle(storeData[0]?.workPage[0]?.slides[3]?.subtitle)
+                setWebUrl(storeData[0]?.workPage[0]?.slides[3]?.webUrl)
+                setTechUsed(storeData[0]?.workPage[0]?.slides[3]?.techUsed)
+                setProjectImage(storeData[0]?.workPage[0]?.slides[3]?.workImages)
+                break;
+            case("bhn"):
+                setTitle(storeData[0]?.workPage[0]?.slides[4]?.title)
+                setProjectHandled(storeData[0]?.workPage[0]?.slides[4]?.projectHandled)
+                setSubtitle(storeData[0]?.workPage[0]?.slides[4]?.subtitle)
+                setWebUrl(storeData[0]?.workPage[0]?.slides[4]?.webUrl)
+                setTechUsed(storeData[0]?.workPage[0]?.slides[4]?.techUsed)
+                setProjectImage(storeData[0]?.workPage[0]?.slides[4]?.workImages)
+                break;
+            case("sng"):
+                setTitle(storeData[0]?.workPage[0]?.slides[5]?.title)
+                setProjectHandled(storeData[0]?.workPage[0]?.slides[5]?.projectHandled)
+                setSubtitle(storeData[0]?.workPage[0]?.slides[5]?.subtitle)
+                setWebUrl(storeData[0]?.workPage[0]?.slides[5]?.webUrl)
+                setTechUsed(storeData[0]?.workPage[0]?.slides[5]?.techUsed)
+                setProjectImage(storeData[0]?.workPage[0]?.slides[5]?.workImages)
+                break;
+            case("sngApp"):
+                setTitle(storeData[0]?.workPage[0]?.slides[6]?.title)
+                setProjectHandled(storeData[0]?.workPage[0]?.slides[6]?.projectHandled)
+                setSubtitle(storeData[0]?.workPage[0]?.slides[6]?.subtitle)
+                setWebUrl(storeData[0]?.workPage[0]?.slides[6]?.webUrl)
+                setTechUsed(storeData[0]?.workPage[0]?.slides[6]?.techUsed)
+                setProjectImage(storeData[0]?.workPage[0]?.slides[6]?.workImages)
+                break;
+            case("bhnApp"):
+                setTitle(storeData[0]?.workPage[0]?.slides[7]?.title)
+                setProjectHandled(storeData[0]?.workPage[0]?.slides[7]?.projectHandled)
+                setSubtitle(storeData[0]?.workPage[0]?.slides[7]?.subtitle)
+                setWebUrl(storeData[0]?.workPage[0]?.slides[7]?.webUrl)
+                setTechUsed(storeData[0]?.workPage[0]?.slides[7]?.techUsed)
+                setProjectImage(storeData[0]?.workPage[0]?.slides[7]?.workImages)
+                break;
             case(""):
                 console.log("something wrong")
         }
