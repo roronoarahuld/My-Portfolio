@@ -8,7 +8,7 @@ import { useApiData } from "../../services/Api";
 const About = () => {
     const { setActiveComponent } = useGlobalContext();
     const [showDiv, setShowDiv] = useState(0);
-    const {storeData} = useApiData()
+    const { storeData } = useApiData()
     const [title, setTitle] = useState("")
     const [titleArray, setTitleArray] = useState([])
     const [rolesPageOne, setRolesPageOne] = useState([])
@@ -29,11 +29,11 @@ const About = () => {
     useEffect(() => {
         setTitle(storeData[0]?.aboutPage[0]?.title)
         setRolesPageOne(storeData[0]?.aboutPage[1]?.roleHighlights)
-        if(title !== undefined){
+        if (title !== undefined) {
             setTitleArray(title.split(" "))
         }
-        setRolesPageTwo(rolesPageOne.pop())
-        console.log("roles",rolePageTwo)
+        // setRolesPageTwo(rolesPageOne.pop())
+        console.log("roles", rolePageTwo)
         console.log("removed", rolesPageOne)
     }, [storeData, title, showDiv, rolesPageOne])
     return (
@@ -65,41 +65,34 @@ const About = () => {
                                     showDiv === 1 ? (
                                         <div className="textAnimate">
                                             <h1>
-                                            {storeData[0]?.aboutPage[1]?.title}:
+                                                {storeData[0]?.aboutPage[1]?.title}:
                                             </h1>
                                             <ul>
-                                                <li>
-                                                    Current Role:
-                                                    <ol>
-                                                        <li>
-                                                            Serving as <span>Team Lead</span> at <span>Homeville Group Pvt. Ltd</span>.
-                                                        </li>
-                                                        <li>
-                                                            Previously contributed as a <span>Senior Software Engineer</span>, focusing on Angular-based systems and UI/UX enhancements.
-                                                        </li>
-                                                    </ol>
-                                                </li>
-                                                <li>
-                                                    Previous Experiences:
-                                                    <ol>
-                                                        <li>
-                                                            <span>UI Developer</span> at <span>Anandpushp Technologies Pvt. Ltd.</span>
-                                                            <ol>
-                                                                <li>
-                                                                    Product based startup on EdTech platforms. Developing the entire  project with responsive
-                                                                </li>
-                                                            </ol>
-                                                        </li>
-                                                        <li>
-                                                            <span>Front-End Developer</span> at <span>McCann (CRAFT)</span>
-                                                            <ol>
-                                                                <li>
-                                                                    Developing responsive Landing pages, Microsite and creating  device compatibility user interface. Worked with clients like Staples, Garnier,  L'Oréal, Essie
-                                                                </li>
-                                                            </ol>
-                                                        </li>
-                                                    </ol>
-                                                </li>
+                                                {
+                                                    rolesPageOne?.map((role) => {
+                                                        return (
+                                                            <li>
+                                                                {role?.title}
+                                                                <ol>
+                                                                    {
+                                                                        role?.descp?.map((rolecont) => {
+                                                                            return (
+                                                                                <>
+                                                                                    <li>
+                                                                                        {rolecont?.roleTitle}
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        {rolecont?.roleDescp}
+                                                                                    </li>
+                                                                                </>
+                                                                            )
+                                                                        })
+                                                                    }
+                                                                </ol>
+                                                            </li>
+                                                        )
+                                                    })
+                                                }
                                             </ul>
                                         </div>
                                     ) : (
@@ -218,7 +211,7 @@ const About = () => {
                 </div>
                 <div className={showDiv === 3 ? "floating-next-div" : ""}>
                     <FloatingDiv
-                        onPress={handleClick} 
+                        onPress={handleClick}
                         title={storeData[0]?.aboutPage[3]?.nextPageDetails[0]?.title}
                         subtitle={storeData[0]?.aboutPage[3]?.nextPageDetails[0]?.subtitle}
                         image={storeData[0]?.aboutPage[3]?.nextPageDetails[0]?.image}
