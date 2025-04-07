@@ -29,7 +29,9 @@ const About = () => {
         if(title !== undefined){
             setTitleArray(title.split(" "))
         }
-        console.log("roles", rolesPageOne.slice(1))
+        const result = rolesPageOne.pop()
+        console.log("roles",result)
+        console.log("removed", rolesPageOne)
     }, [storeData, title, showDiv, rolesPageOne])
     return (
         <>
