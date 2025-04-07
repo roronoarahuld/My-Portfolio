@@ -78,8 +78,8 @@
                 "title": "Key Highlights of my Career",
                 "roleHighlights": [
                     {
-                        "roletitle": "Current Role",
-                        "roleDescp": [
+                        "title": "Current Role",
+                        "descp": [
                             {
                                 "roleTitle": "Team Lead at HomeCapital PVT LTD",
                                 "roleDescp": "Serving as Team Lead< at Homeville Group Pvt. Ltd. Previously contributed as a Senior Software Engineer, focusing on Angular-based systems and UI/UX enhancements."
@@ -87,8 +87,8 @@
                         ]
                     },
                     {
-                        "roletitle": "Previous Experiences",
-                        "roleDescp": [
+                        "title": "Previous Experiences",
+                        "descp": [
                             {
                                 "roleTitle": "UI Developer at Anandpushp Technologies Pvt. Ltd.",
                                 "roleDescp": "Product based startup on EdTech platforms. Developing the entire  project with responsive"
@@ -104,8 +104,8 @@
                         ]
                     },
                     {
-                        "roletitle": "Internship",
-                        "roleDescp": "Worked as a Web Developer Intern in the ,Educational Technology Department at IIT Bombay, developing responsive web pages and learning new technologies."
+                        "title": "Internship",
+                        "descp": "Worked as a Web Developer Intern in the ,Educational Technology Department at IIT Bombay, developing responsive web pages and learning new technologies."
                     }
                 ]
             },
