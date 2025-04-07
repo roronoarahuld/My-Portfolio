@@ -8,17 +8,18 @@ const Home = () => {
     const { setActiveComponent } = useGlobalContext();
     const {storeData , loading} = useApiData()
     const [heading, setHeading] = useState("")
+    const [headingArray, setHeadingArray] = useState([])
     const handleClick = () => {
         setActiveComponent("About")
     };
     useEffect(()=>{
-        const newhead = heading.split(" ")
-        console.log("new", newhead)
-    }, [])
-
-    useEffect(()=>{
         setHeading(storeData[0]?.homePage[0]?.title)
-        
+        if(heading === undefined || heading === null){
+            console.log("nothing here", heading)
+        }else{
+            setHeadingArray(heading.split(" "))
+            console.log("new", headingArray)
+        }
     },[storeData, heading])
     return (
         <>
@@ -28,13 +29,12 @@ const Home = () => {
                         <div className="col-6 content-section">
                             <div className="content-area">
                                 <h1>
-                                    {heading}
-                                    {/* <span>HEY!</span> I am <span>Rahul</span>,<br /> A <span>Front-End Developer</span> based in <span>Mumbai</span> */}
+                                    <span>{headingArray[0]}</span> {headingArray[1] + headingArray[2]} <span>{headingArray[3]}</span><br /> {headingArray[4]} <span>{headingArray[5] + headingArray[6]}</span> {headingArray[7] + headingArray[8]} <span>{headingArray[9]}</span>
                                 </h1>
                                 <p>{storeData[0]?.homePage[0]?.subtitle}</p>
                                 <ul>
                                     <li>
-                                        <button className='button-blue'>{storeData[0]?.homePage[0]?.buttonText}</button>
+                                        <button data-bs-toggle="offcanvas" data-bs-target="#contactSection" aria-controls="contactSection" className='button-blue'>{storeData[0]?.homePage[0]?.buttonText}</button>
                                     </li>
                                     <li>
                                         <a href="javascript:void(0)">

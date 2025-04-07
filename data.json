@@ -164,6 +164,35 @@
                         ]
                     }
                 ]
+            },
+            {
+                "nextPageDetails": [
+                    {
+                        "title": "Work",
+                        "subtitle": "Crafting seamless digital experiences through years of creative",
+                        "image": "work",
+                        "tags": [
+                            {
+                                "tagName": "Website"
+                            },
+                            {
+                                "tagName": "UI / UX"
+                            },
+                            {
+                                "tagName": "Website Department"
+                            },
+                            {
+                                "tagName": "Android"
+                            },
+                            {
+                                "tagName": "IOS"
+                            },
+                            {
+                                "tagName": "Website Design"
+                            }
+                        ]
+                    }
+                ]
             }
         ],
         "workPage" :[
