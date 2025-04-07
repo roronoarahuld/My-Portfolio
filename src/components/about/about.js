@@ -2,11 +2,19 @@ import { useEffect, useState } from "react"
 import FloatingDiv from "../../commonComponents/FloatingDiv";
 import SlideAnimation from "../../commonComponents/SlideAnimation"
 import { useGlobalContext } from '../../AppContext';
+import { useApiData } from "../../services/Api";
 
 
 const About = () => {
     const { setActiveComponent } = useGlobalContext();
     const [showDiv, setShowDiv] = useState(0);
+    const {storeData} = useApiData()
+    const [title, setTitle] = useState("")
+    const [titleArray, setTitleArray] = useState([])
+    const [rolesPageOne, setRolesPageOne] = useState([])
+    const [rolePageTwo, setRolesPageTwo] = useState([])
+    const [previousExpPageOne, setPreviousExpPageOne] = useState([])
+    const [previousExpPageTwo, setPreviousExpPageTwo] = useState([])
     const divNext = () => {
         var addDiv = showDiv;
         setShowDiv(++addDiv);
@@ -19,7 +27,15 @@ const About = () => {
         setActiveComponent("Work")
     };
     useEffect(() => {
-    }, [showDiv])
+        setTitle(storeData[0]?.aboutPage[0]?.title)
+        setRolesPageOne(storeData[0]?.aboutPage[1]?.roleHighlights)
+        if(title !== undefined){
+            setTitleArray(title.split(" "))
+        }
+        setRolesPageTwo(rolesPageOne.pop())
+        console.log("roles",rolePageTwo)
+        console.log("removed", rolesPageOne)
+    }, [storeData, title, showDiv, rolesPageOne])
     return (
         <>
             <section id="sectionAbout">
@@ -35,10 +51,10 @@ const About = () => {
                                     showDiv === 0 ? (
                                         <div className="textAnimate">
                                             <h1>
-                                                Building Cool Things for the <span>Web</span> and <span>App</span>
+                                                {titleArray[0] + " " + titleArray[1] + " " + titleArray[2] + " " + titleArray[3] + " " + titleArray[4]} <span>{titleArray[5]}</span> {titleArray[6]} <span>{titleArray[7]}</span>
                                             </h1>
                                             <p>
-                                                I am a dedicated front-end developer specializing in creating intuitive and user-friendly digital experiences. I do have strong foundation in UI/UX design principles and significant hands-on experience in developing cross-platform mobile applications for both Android and iOS using React Native. I am currently a Team Lead for mobile app development, focusing on innovative in-house projects.
+                                                {storeData[0]?.aboutPage[0]?.subtitle}
                                             </p>
                                         </div>
                                     ) : (
@@ -49,7 +65,7 @@ const About = () => {
                                     showDiv === 1 ? (
                                         <div className="textAnimate">
                                             <h1>
-                                                Key Highlights of my Career:
+                                            {storeData[0]?.aboutPage[1]?.title}:
                                             </h1>
                                             <ul>
                                                 <li>
@@ -177,7 +193,7 @@ const About = () => {
                                             {
                                                 showDiv === 0 ? (
                                                     <>
-                                                        Key highlights of my Career <img src={require("../../images/right-chevron.png")} alt="arrow-img" />
+                                                        {storeData[0]?.aboutPage[1]?.title} <img src={require("../../images/right-chevron.png")} alt="arrow-img" />
                                                     </>
                                                 ) : (
                                                     <img src={require("../../images/right-chevron.png")} alt="arrow-img" />
@@ -203,9 +219,10 @@ const About = () => {
                 <div className={showDiv === 3 ? "floating-next-div" : ""}>
                     <FloatingDiv
                         onPress={handleClick} 
-                        title="Work"
-                        subtitle="Crafting seamless digital experiences through years of creative"
-                        tags={["Website", "UI / UX", "Website Department", "Android", "IOS", "Website Design"]}
+                        title={storeData[0]?.aboutPage[3]?.nextPageDetails[0]?.title}
+                        subtitle={storeData[0]?.aboutPage[3]?.nextPageDetails[0]?.subtitle}
+                        image={storeData[0]?.aboutPage[3]?.nextPageDetails[0]?.image}
+                        tags={storeData[0]?.aboutPage[3]?.nextPageDetails[0]?.tags}
                     />
                 </div>
             </section>

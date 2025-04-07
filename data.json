@@ -78,22 +78,24 @@
                 "title": "Key Highlights of my Career",
                 "roleHighlights": [
                     {
-                        "roletitle": "Current Role",
-                        "roleDescp": [
+                        "title": "Current Role",
+                        "descp": [
                             {
-                                "role": "Serving as Team Lead< at Homeville Group Pvt. Ltd"
-                            },
-                            {
-                                "role": "Previously contributed as a Senior Software Engineer, focusing on Angular-based systems and UI/UX enhancements."
+                                "roleTitle": "Team Lead at HomeCapital PVT LTD",
+                                "roleDescp": "Serving as Team Lead< at Homeville Group Pvt. Ltd. Previously contributed as a Senior Software Engineer, focusing on Angular-based systems and UI/UX enhancements."
                             }
                         ]
                     },
                     {
-                        "roletitle": "Previous Experiences",
-                        "roleDescp": [
+                        "title": "Previous Experiences",
+                        "descp": [
                             {
                                 "roleTitle": "UI Developer at Anandpushp Technologies Pvt. Ltd.",
                                 "roleDescp": "Product based startup on EdTech platforms. Developing the entire  project with responsive"
+                            },
+                            {
+                                "roleTitle": "Web Developer at MCcann (Craft)",
+                                "roleDescp": "Developing responsive Landing pages, Microsite and creating device compatibility user interface. Worked with clients like Staples, Garnier, L'Oréal, Essie"
                             },
                             {
                                 "roleTitle": "Web/UI Developer at IIT Bombay",
@@ -106,8 +108,8 @@
                         ]
                     },
                     {
-                        "roletitle": "Internship",
-                        "roleDescp": "Worked as a Web Developer Intern in the ,Educational Technology Department at IIT Bombay, developing responsive web pages and learning new technologies."
+                        "title": "Internship",
+                        "descp": "Worked as a Web Developer Intern in the ,Educational Technology Department at IIT Bombay, developing responsive web pages and learning new technologies."
                     }
                 ]
             },
@@ -160,6 +162,35 @@
                             },
                             {
                                 "image": "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/physics.png"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "nextPageDetails": [
+                    {
+                        "title": "Work",
+                        "subtitle": "Crafting seamless digital experiences through years of creative",
+                        "image": "work",
+                        "tags": [
+                            {
+                                "tagName": "Website"
+                            },
+                            {
+                                "tagName": "UI / UX"
+                            },
+                            {
+                                "tagName": "Website Department"
+                            },
+                            {
+                                "tagName": "Android"
+                            },
+                            {
+                                "tagName": "IOS"
+                            },
+                            {
+                                "tagName": "Website Design"
                             }
                         ]
                     }
