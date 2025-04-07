@@ -91,7 +91,7 @@ export const SliderOffCanvas = ({ Attribute, title, projectHandled, subtitle, we
                                 {
                                     techUsed.map((img) => {
                                         return (
-                                            <img src={img.image} />
+                                            <img key={img} src={img.image} />
                                         )
                                     })
                                 }
@@ -103,7 +103,7 @@ export const SliderOffCanvas = ({ Attribute, title, projectHandled, subtitle, we
                             {
                                 projectImage[0]?.images?.map((primg)=>{
                                     return(
-                                        <img src={primg?.link} className="img-fluid" />
+                                        <img key={primg} src={primg?.link} className="img-fluid" />
                                     )
                                 })
                             }
@@ -117,7 +117,7 @@ export const SliderOffCanvas = ({ Attribute, title, projectHandled, subtitle, we
                             {
                                 projectImage[1]?.images?.map((primg)=>{
                                     return(
-                                        <img src={primg?.link} className="img-fluid" />
+                                        <img key={primg} src={primg?.link} className="img-fluid" />
                                     )
                                 })
                             }
@@ -128,7 +128,7 @@ export const SliderOffCanvas = ({ Attribute, title, projectHandled, subtitle, we
                             {
                                 projectImage[2]?.images?.map((primg)=>{
                                     return(
-                                        <img src={primg?.link} className="img-fluid" />
+                                        <img key={primg} src={primg?.link} className="img-fluid" />
                                     )
                                 })
                             }

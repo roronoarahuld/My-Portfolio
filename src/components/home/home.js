@@ -11,14 +11,10 @@ const Home = () => {
     const handleClick = () => {
         setActiveComponent("About")
     };
-    useEffect(()=>{
-        const newhead = heading.split(" ")
-        console.log("new", newhead)
-    }, [])
 
     useEffect(()=>{
         setHeading(storeData[0]?.homePage[0]?.title)
-        
+        console.log("title", heading)
     },[storeData, heading])
     return (
         <>
