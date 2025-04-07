@@ -13,6 +13,8 @@ const About = () => {
     const [titleArray, setTitleArray] = useState([])
     const [rolesPageOne, setRolesPageOne] = useState([])
     const [rolePageTwo, setRolesPageTwo] = useState([])
+    const [previousExpPageOne, setPreviousExpPageOne] = useState([])
+    const [previousExpPageTwo, setPreviousExpPageTwo] = useState([])
     const divNext = () => {
         var addDiv = showDiv;
         setShowDiv(++addDiv);
@@ -30,8 +32,8 @@ const About = () => {
         if(title !== undefined){
             setTitleArray(title.split(" "))
         }
-        const result = rolesPageOne.pop()
-        console.log("roles",result)
+        setRolesPageTwo(rolesPageOne.pop())
+        console.log("roles",rolePageTwo)
         console.log("removed", rolesPageOne)
     }, [storeData, title, showDiv, rolesPageOne])
     return (
