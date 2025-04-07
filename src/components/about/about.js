@@ -12,6 +12,7 @@ const About = () => {
     const [title, setTitle] = useState("")
     const [titleArray, setTitleArray] = useState([])
     const [rolesPageOne, setRolesPageOne] = useState([])
+    const [rolePageTwo, setRolesPageTwo] = useState([])
     const divNext = () => {
         var addDiv = showDiv;
         setShowDiv(++addDiv);
