@@ -81,10 +81,8 @@
                         "roletitle": "Current Role",
                         "roleDescp": [
                             {
-                                "role": "Serving as Team Lead< at Homeville Group Pvt. Ltd"
-                            },
-                            {
-                                "role": "Previously contributed as a Senior Software Engineer, focusing on Angular-based systems and UI/UX enhancements."
+                                "roleTitle": "Team Lead at HomeCapital PVT LTD",
+                                "roleDescp": "Serving as Team Lead< at Homeville Group Pvt. Ltd. Previously contributed as a Senior Software Engineer, focusing on Angular-based systems and UI/UX enhancements."
                             }
                         ]
                     },
