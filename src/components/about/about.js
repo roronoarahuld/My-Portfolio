@@ -29,11 +29,13 @@ const About = () => {
     useEffect(() => {
         setTitle(storeData[0]?.aboutPage[0]?.title)
         setRolesPageOne(storeData[0]?.aboutPage[1]?.roleHighlights)
+        setPreviousExpPageOne(storeData[0]?.aboutPage[1]?.roleHighlights[1]?.descp)
         if (title !== undefined) {
             setTitleArray(title.split(" "))
         }
-        // setRolesPageTwo(rolesPageOne.pop())
-        console.log("roles", rolePageTwo)
+        setRolesPageTwo(rolesPageOne.slice(0, 2))
+        setPreviousExpPageTwo(previousExpPageOne.slice(0, 2))
+        console.log("roles", rolesPageOne[0]?.descp[0]?.roleTitle)
         console.log("removed", rolesPageOne)
     }, [storeData, title, showDiv, rolesPageOne])
     return (
@@ -69,24 +71,39 @@ const About = () => {
                                             </h1>
                                             <ul>
                                                 {
-                                                    rolesPageOne?.map((role) => {
+                                                    rolePageTwo?.map((role) => {
                                                         return (
                                                             <li>
                                                                 {role?.title}
                                                                 <ol>
                                                                     {
-                                                                        role?.descp?.map((rolecont) => {
-                                                                            return (
-                                                                                <>
-                                                                                    <li>
-                                                                                        {rolecont?.roleTitle}
-                                                                                    </li>
-                                                                                    <li>
-                                                                                        {rolecont?.roleDescp}
-                                                                                    </li>
-                                                                                </>
-                                                                            )
-                                                                        })
+                                                                        role?.title === "Current Role" ? (
+                                                                            <>
+                                                                                <li className="color-black font-medium">
+                                                                                    {rolesPageOne[0]?.descp[0]?.roleTitle}
+                                                                                </li>
+                                                                                <li>
+                                                                                    {rolesPageOne[0]?.descp[0]?.roleDescp}
+                                                                                </li>
+                                                                            </>
+                                                                        ) : (
+                                                                            <>
+                                                                                {
+                                                                                    previousExpPageTwo?.map((rolecont) => {
+                                                                                        return (
+                                                                                            <>
+                                                                                                <li className="color-black font-medium">
+                                                                                                    {rolecont?.roleTitle}
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    {rolecont?.roleDescp}
+                                                                                                </li>
+                                                                                            </>
+                                                                                        )
+                                                                                    })
+                                                                                }
+                                                                            </>
+                                                                        )
                                                                     }
                                                                 </ol>
                                                             </li>
@@ -103,6 +120,24 @@ const About = () => {
                                     showDiv === 2 ? (
                                         <div className="textAnimate">
                                             <ul>
+                                                <li>
+                                                    <ol>
+                                                        {
+                                                            previousExpPageOne?.map((rolecont) => {
+                                                                return (
+                                                                    <>
+                                                                        <li className="color-black font-medium">
+                                                                            {rolecont?.roleTitle}
+                                                                        </li>
+                                                                        <li>
+                                                                            {rolecont?.roleDescp}
+                                                                        </li>
+                                                                    </>
+                                                                )
+                                                            })
+                                                        }
+                                                    </ol>
+                                                </li>
                                                 <li>
                                                     <ol>
                                                         <li>

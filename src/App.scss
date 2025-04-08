@@ -243,3 +243,9 @@ section{
 .fade{
   transition: opacity 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
+.font-medium{
+  font-weight: $medium !important;
+}
+.color-black{
+  color: $title-color !important;
+}
