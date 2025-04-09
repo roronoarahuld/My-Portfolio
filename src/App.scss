@@ -3,31 +3,51 @@
 @import "./components/home/home.scss";
 @import "./components/about/about.scss";
 @import "./components/work/work.scss";
-*{
+
+* {
   margin: 0;
   padding: 0;
   font-size: 16px;
   font-family: $font-family;
   // background-color: #000;
 }
-body{
+
+body {
   overflow: hidden;
 }
-h1, h2, h3, h4 , h5, h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-bottom: 0;
 }
-ul{
+
+ul {
   padding-left: 0;
 }
-p{
+
+p {
   margin-bottom: 0;
 }
+
 @keyframes sectionAnimate {
-  0% {opacity: 0;}
-  50% {opacity: 0.1;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
-section{
+
+section {
   height: 100vh;
   overflow: hidden;
   animation-name: sectionAnimate;
@@ -35,15 +55,17 @@ section{
   animation-duration: 1s;
 
 }
-.button-blue{
+
+.button-blue {
   padding: 16px 60px;
   background: $primary-color;
   color: #fff;
   font-size: 1.125rem;
-  border: none; 
+  border: none;
   border-radius: 50px;
 }
-.noBg-button{
+
+.noBg-button {
   background: transparent;
   border: none;
   margin: 80px 0;
@@ -51,22 +73,27 @@ section{
   display: flex;
   font-size: 1.125rem;
   align-items: center;
-  img{
+
+  img {
     margin: 0 0.313rem
   }
 }
-@keyframes floatAnimate{
-  from{
+
+@keyframes floatAnimate {
+  from {
     bottom: -50%;
   }
-  to{
+
+  to {
     bottom: 0;
   }
 }
-.tags_next_page{
+
+.tags_next_page {
   display: flex;
   justify-content: space-between;
-  ul{
+
+  ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -76,59 +103,68 @@ section{
     position: relative;
     z-index: 99;
     gap: 8px;
-    li{
-        background-color: $body-bg;
-        border-radius: 60px;
-        border: 1px solid $primary-color;
-        color: $primary-color;
-        padding: 6px 28px;
-        font-size: 0.75rem;
-        &:hover{
-          background-color: $primary-color;
-          color: $body-bg;
-          transition: 0.3s ease-in-out;
-        }
+
+    li {
+      background-color: $body-bg;
+      border-radius: 60px;
+      border: 1px solid $primary-color;
+      color: $primary-color;
+      padding: 6px 28px;
+      font-size: 0.75rem;
+
+      &:hover {
+        background-color: $primary-color;
+        color: $body-bg;
+        transition: 0.3s ease-in-out;
+      }
     }
-    li.white{
+
+    li.white {
       background-color: transparent;
       border-radius: 60px;
       border: 1px solid $body-bg;
       color: $body-bg;
       padding: 6px 28px;
       font-size: 0.75rem;
-      &:hover{
+
+      &:hover {
         background-color: $primary-color;
         color: $body-bg;
         border: 1px solid $primary-color;
         transition: 0.3s ease-in-out;
       }
+    }
   }
-  }
-  .arrow_next{
+
+  .arrow_next {
     cursor: pointer;
   }
 }
-.floating-next-div{
+
+.floating-next-div {
   width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
-  box-shadow: 0px -6px 44px rgba(167,167,167,0.32);
+  box-shadow: 0px -6px 44px rgba(167, 167, 167, 0.32);
   background-color: #fff;
   height: 144px;
   animation: 0.5s floatAnimate ease-in-out;
-  .thumbnail-area{
-    img{
+
+  .thumbnail-area {
+    img {
       width: 14.5rem;
       height: 6rem;
     }
-    h4{
+
+    h4 {
       font-size: 1.563rem;
       font-weight: $medium;
       color: $title-color;
       padding-bottom: 3px;
     }
-    span{
+
+    span {
       font-size: 1rem;
       font-weight: $regular;
       color: $para-color;
@@ -136,22 +172,34 @@ section{
       padding-right: 1.5rem;
     }
   }
-  
+
 }
-@keyframes viewport{
-  from{
+
+@keyframes viewport {
+  from {
     top: 100vh;
   }
-  to{
+
+  to {
     top: 0;
   }
 }
-@keyframes slideUp{
-  0%{top: 100vh;}
-  50%{top: 0;}
-  100%{top: -100vh}
+
+@keyframes slideUp {
+  0% {
+    top: 100vh;
+  }
+
+  50% {
+    top: 0;
+  }
+
+  100% {
+    top: -100vh
+  }
 }
-.slideAnimation{
+
+.slideAnimation {
   background-color: $primary-color;
   width: 100%;
   top: -100vh;
@@ -163,7 +211,8 @@ section{
   animation-duration: 1.3s;
   z-index: 9999;
 }
-.activeAbout{
+
+.activeAbout {
   position: absolute;
   top: 0;
   left: 0;
@@ -172,57 +221,88 @@ section{
   background-color: $body-bg;
   animation: 1.2s viewport ease-in-out;
 }
-@keyframes textAnimate{
-  from{
+
+@keyframes textAnimate {
+  from {
     position: relative;
     right: -25px;
-  }to{
+  }
+
+  to {
     position: relative;
     right: 0px;
   }
 }
-.textAnimate{
+
+.textAnimate {
   animation: 0.5s textAnimate ease-in-out;
 }
+
 .blue_bg {
   background-color: $primary-color;
   padding: 4rem;
-  p{
-      color: $body-bg !important;
+
+  p {
+    color: $body-bg !important;
   }
 }
-#sngApp, #bhnApp{
-  img{
+
+#sngApp,
+#bhnApp {
+  img {
     max-width: 300px;
-    &:not(:last-child){
+
+    &:not(:last-child) {
       margin-right: 16px;
     }
   }
 }
-.contact_div{
-  padding: 2rem;
-  h3{
+
+.contact_div {
+  padding: 1rem;
+
+  h3 {
     font-size: $font-44;
     color: $title-color;
     margin-bottom: 1.25rem;
     font-weight: $medium;
   }
-  span{
+
+  span {
     font-size: 1.25rem;
     display: block;
     margin-bottom: 1rem;
     font-weight: $regular;
   }
-  ul{
+
+  ul {
     list-style: none;
-    li{
-      a{
+
+    li {
+      a {
         text-decoration: none;
-        span{
+        display: flex;
+        align-items: center;
+        .img-border {
+          width: 60px;
+          height: 60px;
+          padding: 10px;
+          border-radius: 50px;
+          border: 2px solid $title-color;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            width: 30px;
+            height: 30px;
+          }
+        }
+        span {
           font-weight: $regular;
           font-size: 1.125rem;
           color: $para-color;
-          padding-bottom: 1.25rem;
+          padding-left: 1rem;
           display: inline-block;
         }
       }
@@ -231,21 +311,26 @@ section{
 }
 
 // Bootstrap Overwritten
-.offcanvas-bottom{
+.offcanvas-bottom {
   height: 100vh !important;
 }
-.offcanvas-end{
+
+.offcanvas-end {
   border-left: none !important;
 }
-.offcanvas-backdrop.show{
+
+.offcanvas-backdrop.show {
   opacity: 0.08 !important;
 }
-.fade{
+
+.fade {
   transition: opacity 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
-.font-medium{
+
+.font-medium {
   font-weight: $medium !important;
 }
-.color-black{
+
+.color-black {
   color: $title-color !important;
 }
