@@ -608,6 +608,51 @@
                     }
                 ]
             }
+        ],
+        "contactPage" : [
+            {
+                "title" : "Let's Connect",
+                "descp" : [
+                    {
+                        "title" : "Social Media",
+                        "links" : [
+                            {
+                                "linkName": "Github",
+                                "link": "https://github.com/roronoarahuld"
+                            },
+                            {
+                                "linkName": "LinkedIn",
+                                "link": "https://www.linkedin.com/in/rahul-dolui-303418109"
+                            },
+                            {
+                                "linkName": "Facebook",
+                                "link": "https://www.facebook.com/rahRD"
+                            },
+                            {
+                                "linkName": "Instagram",
+                                "link": "https://www.instagram.com/d.rahul95"
+                            },
+                            {
+                                "linkName": "Youtube",
+                                "link": "https://www.youtube.com/@kuroso3631"
+                            }
+                        ]
+                    },
+                    {
+                        "title" : "Contact",
+                        "links" : [
+                            {
+                                "linkName": "Phone",
+                                "link": "+91 7738479694"
+                            },
+                            {
+                                "linkName": "Contact",
+                                "link": "dolui.rahul@gmail.com"
+                            }
+                        ]
+                    }
+                ]
+            }
         ]
     }
 ]
