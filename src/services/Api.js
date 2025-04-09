@@ -25,7 +25,6 @@ export const ApiData = ({children}) => {
         getData()
     }, [])
     useEffect(() => {
-        console.log("printing", storeData[0]?.homePage[0]?.buttonText)
     }, [storeData])
 
     return(

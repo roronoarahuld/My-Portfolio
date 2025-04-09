@@ -11,7 +11,6 @@ import { ContactOffCanvas } from './commonComponents/Offcanvas';
 
 const PageContent = () => {
   const { activeComponent } = useGlobalContext();
-  console.log("active", activeComponent)
 
   return (
     <div>

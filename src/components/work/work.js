@@ -13,7 +13,6 @@ export default function Work() {
     const [techUsed, setTechUsed] = useState([])
     const slidesData = storeData[0]?.workPage[0]?.slides
     useEffect(() => {
-        console.log("Value", offcanvasValue)
         switch(offcanvasValue){
             case("antimYatra"):
                 setTitle(storeData[0]?.workPage[0]?.slides[0]?.title)

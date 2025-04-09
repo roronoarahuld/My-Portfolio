@@ -68,7 +68,6 @@ export const ContactOffCanvas = () => {
 }
 
 export const SliderOffCanvas = ({ Attribute, title, projectHandled, subtitle, webUrl, techUsed, projectImage }: Props) => {
-    console.log("array", projectImage)
     return (
         <div className="offcanvas offcanvas-bottom " tabIndex="-1" id="offCanvas" aria-labelledby="offcanvasBottomLabel">
             <div className="offcanvas-body small" id={Attribute}>

@@ -15,6 +15,7 @@ const About = () => {
     const [rolePageTwo, setRolesPageTwo] = useState([])
     const [previousExpPageOne, setPreviousExpPageOne] = useState([])
     const [previousExpPageTwo, setPreviousExpPageTwo] = useState([])
+    const [previousExpPageThree, setPreviousExpPageThree] = useState([])
     const divNext = () => {
         var addDiv = showDiv;
         setShowDiv(++addDiv);
@@ -35,8 +36,7 @@ const About = () => {
         }
         setRolesPageTwo(rolesPageOne.slice(0, 2))
         setPreviousExpPageTwo(previousExpPageOne.slice(0, 2))
-        console.log("roles", rolesPageOne[0]?.descp[0]?.roleTitle)
-        console.log("removed", rolesPageOne)
+        setPreviousExpPageThree(previousExpPageOne.slice(-2))
     }, [storeData, title, showDiv, rolesPageOne])
     return (
         <>
@@ -73,7 +73,7 @@ const About = () => {
                                                 {
                                                     rolePageTwo?.map((role) => {
                                                         return (
-                                                            <li>
+                                                            <li key={role}>
                                                                 {role?.title}
                                                                 <ol>
                                                                     {
@@ -92,7 +92,7 @@ const About = () => {
                                                                                     previousExpPageTwo?.map((rolecont) => {
                                                                                         return (
                                                                                             <>
-                                                                                                <li className="color-black font-medium">
+                                                                                                <li key={rolecont} className="color-black font-medium">
                                                                                                     {rolecont?.roleTitle}
                                                                                                 </li>
                                                                                                 <li>
@@ -123,10 +123,10 @@ const About = () => {
                                                 <li>
                                                     <ol>
                                                         {
-                                                            previousExpPageOne?.map((rolecont) => {
+                                                            previousExpPageThree?.map((rolecont) => {
                                                                 return (
                                                                     <>
-                                                                        <li className="color-black font-medium">
+                                                                        <li key={rolecont} className="color-black font-medium">
                                                                             {rolecont?.roleTitle}
                                                                         </li>
                                                                         <li>
@@ -139,34 +139,10 @@ const About = () => {
                                                     </ol>
                                                 </li>
                                                 <li>
+                                                    {storeData[0]?.aboutPage[1]?.roleHighlights[2]?.title}
                                                     <ol>
                                                         <li>
-                                                            <span>Web/UI Developer</span> at <span>IIT Bombay</span>
-                                                            <ol>
-                                                                <li>
-                                                                    Working as <span>UI/ Web Developer</span>. Being the only <span>Front - End Developer</span> I was responsible for the whole project. Worked on project like Next Education Research Lab
-                                                                </li>
-                                                            </ol>
-                                                        </li>
-                                                    </ol>
-                                                </li>
-                                                <li>
-                                                    <ol>
-                                                        <li>
-                                                            <span>Web Developer</span> at <span>Digital Latte</span> and <span>Suggesssto Pvt. Ltd</span>
-                                                            <ol>
-                                                                <li>
-                                                                    Developed websites from PSD designs and contributed to major projects, including e-commerce platforms.
-                                                                </li>
-                                                            </ol>
-                                                        </li>
-                                                    </ol>
-                                                </li>
-                                                <li>
-                                                    Internship
-                                                    <ol>
-                                                        <li>
-                                                            Worked as a <span>Web Developer Intern</span> in the <span>Educational Technology Department at IIT Bombay</span>, developing responsive web pages and learning new technologies.
+                                                            {storeData[0]?.aboutPage[1]?.roleHighlights[2]?.descp}
                                                         </li>
                                                     </ol>
                                                 </li>
@@ -179,34 +155,26 @@ const About = () => {
                                 {
                                     showDiv === 3 ? (
                                         <div className="textAnimate">
-                                            <h1>Skills</h1>
+                                            <h1>{storeData[0]?.aboutPage[2]?.title}</h1>
                                             <ul className="skills-ul">
-                                                <li>
-                                                    Design Tools:
-                                                    <div>
-                                                        <img src={require("../../images/figma.png")} alt="skill-img" />
-                                                        <img src={require("../../images/photoshop.png")} alt="skill-img" />
-                                                        <img src={require("../../images/illustrator.png")} alt="skill-img" />
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    Front End Development:
-                                                    <div>
-                                                        <img src={require("../../images/html-5.png")} alt="skill-img" />
-                                                        <img src={require("../../images/css-3.png")} alt="skill-img" />
-                                                        <img src={require("../../images/js.png")} alt="skill-img" />
-                                                        <img src={require("../../images/bootstrap.png")} alt="skill-img" />
-                                                        <img src={require("../../images/material-ui.png")} alt="skill-img" />
-                                                        <img src={require("../../images/tailwind.png")} alt="skill-img" />
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    Frameworks & Libraries:
-                                                    <div>
-                                                        <img src={require("../../images/physics.png")} alt="skill-img" />
-                                                        <img src={require("../../images/react.png")} alt="skill-img" />
-                                                    </div>
-                                                </li>
+                                                {
+                                                    storeData[0]?.aboutPage[2]?.skillset?.map((skills)=>{
+                                                        return(
+                                                            <li key={skills}>
+                                                                {skills?.skillName}
+                                                                <div>
+                                                                    {
+                                                                        skills?.skillImages?.map((icons)=>{
+                                                                            return(
+                                                                                <img key={icons} src={icons?.image} />
+                                                                            )
+                                                                        })
+                                                                    }
+                                                                </div>
+                                                            </li>
+                                                        )
+                                                    })
+                                                }
                                             </ul>
                                         </div>
                                     ) : (
