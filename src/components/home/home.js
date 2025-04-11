@@ -23,7 +23,10 @@ const Home = () => {
             <section id="sectionHome">
                 <div className="container">
                     <div className="row">
-                        <div className="col-6 content-section">
+                        <div className="col-md-6 order-md-2 image-section">
+                            <div className="image-area"></div>
+                        </div>
+                        <div className="col-md-6 order-md-1 content-section">
                             <div className="content-area">
                                 <h1>
                                     <span>{headingArray[0]}</span> {headingArray[1] + " " + headingArray[2]} <span>{headingArray[3]}</span><br /> {headingArray[4]} <span>{headingArray[5] + " " + headingArray[6]}</span> {headingArray[7] + " " + headingArray[8]} <span>{headingArray[9]}</span>
@@ -53,9 +56,6 @@ const Home = () => {
                                 </ul>
                                 <span className='jobtitle'>{storeData[0]?.homePage[0]?.designation}</span>
                             </div>
-                        </div>
-                        <div className="col-6 image-section">
-                            <div className="image-area"></div>
                         </div>
                     </div>
                 </div>

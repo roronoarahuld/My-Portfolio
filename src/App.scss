@@ -58,11 +58,20 @@ section {
 
 .button-blue {
   padding: 16px 60px;
-  background: linear-gradient($primary-color 0 0);
-  color: #fff;
+  background: linear-gradient(to left, $primary-color 50%, $body-bg 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  color: $body-bg;
   font-size: 1.125rem;
-  border: none;
+  border: 2px solid $primary-color;
   border-radius: 50px;
+  transition: all .4s ease-in-out;
+
+  &:hover {
+    background-position: left bottom;
+    color: $primary-color;
+
+  }
 }
 
 .noBg-button {
@@ -283,30 +292,42 @@ section {
         text-decoration: none;
         display: flex;
         align-items: center;
+
         .img-border {
           width: 40px;
           height: 40px;
           padding: 10px;
           border-radius: 50px;
-          border: 2px solid $title-color;
           display: flex;
           justify-content: center;
           align-items: center;
-
-          img {
-            width: 20px;
-            height: 20px;
-          }
-        }
-        span {
-          font-weight: $regular;
-          font-size: 1.125rem;
-          color: $title-color;
-          padding-left: 1rem;
-          display: inline-block;
+          border: 2px solid $title-color;
         }
       }
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
     }
+
+    span {
+      font-weight: $regular;
+      font-size: 1.125rem;
+      color: $title-color;
+      padding-left: 1rem;
+      display: inline-block;
+    }
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
   }
 }
 
@@ -333,4 +354,53 @@ section {
 
 .color-black {
   color: $title-color !important;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow: scroll;
+  }
+
+  .floating-next-div {
+    position: fixed;
+    height: 84px;
+    .container{
+      padding: 1rem 2rem !important;
+      .thumbnail-area {
+        .ps-5{
+          padding-left: 0rem !important;
+        }
+        img {
+          display: none;
+        }
+  
+        h4 {
+          font-size: 1rem;
+        }
+  
+        span {
+          height: 18px;
+          max-width: 200px;
+          overflow: hidden;
+          position: relative;
+          display: inline-block;
+          text-decoration: none;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+      .tags_next_page{
+        justify-content: end;
+        .arrow_next{
+          img{
+            width: 40px;
+            height: 40px;
+          }
+        }
+        ul{
+          display: none;
+        }
+      }
+    }
+  }
 }

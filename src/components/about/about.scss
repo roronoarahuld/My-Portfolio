@@ -120,7 +120,7 @@
                 position: relative;
 
                 .image-area {
-                    // background: url("../../images/about-img.jpg") no-repeat;
+                    background: url("../../images/about-img.jpg") no-repeat;
                     background-color: $primary-color;
                     width: 30.25rem;
                     height: 39.5rem;
@@ -132,6 +132,31 @@
                     top: 50%;
                     left: 0;
                     transform: translateY(-50%);
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    #sectionAbout{
+        height: auto;
+        .container {
+            height: auto;
+            padding: 2rem;
+            .row {
+                height: auto;
+                .image-section{
+                    display: none;
+                }
+                .content-section{
+                    border: none;
+                    .content-area{
+                        position: static;
+                        top: 0;
+                        left: 0;
+                        transform: none;
+                        padding: 0 0.75rem;
+                    }
                 }
             }
         }

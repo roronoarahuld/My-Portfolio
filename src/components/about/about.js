@@ -43,10 +43,10 @@ const About = () => {
             <section id="sectionAbout">
                 <div className="container h-100">
                     <div className="row h-100">
-                        <div className="col-6 image-section">
+                        <div className="col-md-6 image-section">
                             <div className="image-area"></div>
                         </div>
-                        <div className="col-6 content-section">
+                        <div className="col-md-6 content-section">
 
                             <div className="content-area">
                                 {
@@ -212,7 +212,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <div className={showDiv === 3 ? "floating-next-div" : ""}>
+                <div className={showDiv === 3 ? "floating-next-div" : "d-none"}>
                     <FloatingDiv
                         onPress={handleClick}
                         title={storeData[0]?.aboutPage[3]?.nextPageDetails[0]?.title}

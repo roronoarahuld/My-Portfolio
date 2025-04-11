@@ -1,73 +1,88 @@
 @import "../../index.scss";
-#sectionHome{
+
+#sectionHome {
     padding: $custom-padding-2;
     height: 100vh;
-    .container{
+
+    .container {
         height: 80vh;
-        .row{
+
+        .row {
             height: inherit;
-            .content-section{
+
+            .content-section {
                 border-right: 2px dashed $border-color;
                 position: relative;
-                .content-area{
+
+                .content-area {
                     position: absolute;
                     padding: 0 0.75rem;
                     width: 100%;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
-                    h1{
+
+                    h1 {
                         font-size: $font-44;
                         max-width: 31.913rem;
                         font-weight: $light;
                         line-height: 3.5rem;
-                        span{
-                            &:nth-child(1){
+
+                        span {
+                            &:nth-child(1) {
                                 font-weight: $regular;
                             }
+
                             font-weight: $semiBold;
                             font-size: $font-44;
                             display: inline-block;
                         }
                     }
-                    p{
+
+                    p {
                         color: $para-color;
                         font-size: 1.125rem;
                         padding-top: 8px;
                     }
-                    ul{
+
+                    ul {
                         list-style: none;
                         padding-top: 1.875rem;
                         display: flex;
-                        li{
-                            a{
+
+                        li {
+                            a {
                                 width: 60px;
                                 height: 60px;
                                 padding: 10px;
                                 border-radius: 50px;
-                                border: 2px solid $title-color;
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
-                                img{
+                                border: 2px solid $title-color;
+
+                                img {
                                     width: 30px;
                                     height: 30px;
                                 }
                             }
-                            &:not(:last-child){
+
+                            &:not(:last-child) {
                                 margin-right: 8px;
                             }
                         }
                     }
                 }
-                .jobtitle{
+
+                .jobtitle {
                     position: relative;
                     display: block;
                     padding-left: 24px;
                     color: $title-color;
                     font-weight: $regular;
                     font-size: 1.125rem;
-                    &::before{
+
+                    &::before {
                         content: '';
                         position: absolute;
                         top: 50%;
@@ -81,10 +96,12 @@
                     }
                 }
             }
-            .image-section{
+
+            .image-section {
                 position: relative;
-                .image-area{
-                    // background: url("../../images/home-img.jpg") no-repeat;
+
+                .image-area {
+                    background: url("../../images/home-img.jpg") no-repeat;
                     background-color: $primary-color;
                     width: 30.25rem;
                     height: 39.5rem;
@@ -96,6 +113,67 @@
                     top: 50%;
                     right: 0;
                     transform: translateY(-50%);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #sectionHome {
+        height: auto;
+
+        .container {
+            height: auto;
+            padding: 2rem;
+            .row {
+                height: auto;
+
+                .content-section {
+                    border: none;
+                    padding-top: 1rem;
+                    .content-area {
+                        position: static;
+                        top: 0%;
+                        left: 0%;
+                        transform: none;
+                        h1{
+                            font-size: $font-34;
+                            line-height: 2.5rem;
+                            br{
+                                display: none;
+                            }
+                            span{
+                                font-size: $font-34;
+                            }
+                        }
+                        ul{
+                            flex-wrap: wrap;
+                            li{
+                                &:first-child{
+                                    width: 100%;
+                                }
+                                button{
+                                    width: 100%;
+                                }
+                                &:not(:first-child){
+                                    margin-top: 1rem;
+                                }
+                            }
+                        }
+                    }
+                }
+                .image-section{
+                    .image-area{
+                        position: static;
+                        top: 0%;
+                        left: 0%;
+                        transform: none;
+                        float: none;
+                        width: 100%;
+                        height: 550px;
+                        background-position: center;
+                    }
                 }
             }
         }
