@@ -58,7 +58,7 @@ section {
 
 .button-blue {
   padding: 16px 60px;
-  background: $primary-color;
+  background: linear-gradient($primary-color 0 0);
   color: #fff;
   font-size: 1.125rem;
   border: none;
@@ -284,8 +284,8 @@ section {
         display: flex;
         align-items: center;
         .img-border {
-          width: 60px;
-          height: 60px;
+          width: 40px;
+          height: 40px;
           padding: 10px;
           border-radius: 50px;
           border: 2px solid $title-color;
@@ -294,14 +294,14 @@ section {
           align-items: center;
 
           img {
-            width: 30px;
-            height: 30px;
+            width: 20px;
+            height: 20px;
           }
         }
         span {
           font-weight: $regular;
           font-size: 1.125rem;
-          color: $para-color;
+          color: $title-color;
           padding-left: 1rem;
           display: inline-block;
         }

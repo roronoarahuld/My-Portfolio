@@ -643,11 +643,11 @@
                         "links" : [
                             {
                                 "linkName": "Phone",
-                                "link": "+91 7738479694"
+                                "link": "tel:+917738479694"
                             },
                             {
                                 "linkName": "Contact",
-                                "link": "dolui.rahul@gmail.com"
+                                "link": "mailto:dolui.rahul@gmail.com"
                             }
                         ]
                     }
