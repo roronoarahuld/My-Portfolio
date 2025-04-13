@@ -116,41 +116,48 @@
                     background-position: center;
                     background-size: cover;
                 }
+
                 &:nth-child(2) {
                     background: url("../../images/card_puneri.png");
                     background-repeat: no-repeat;
                     background-position: left;
                     background-size: cover;
                 }
+
                 &:nth-child(3) {
                     background: url("../../images/card_staples.png");
                     background-repeat: no-repeat;
                     background-position: left;
                     background-size: cover;
                 }
+
                 &:nth-child(4) {
                     background: url("../../images/card_JIB.png");
                     background-repeat: no-repeat;
                     background-position: left;
                     background-size: cover;
                 }
+
                 &:nth-child(5) {
                     background: url("../../images/card_bhn.png");
                     background-repeat: no-repeat;
                     background-position: left;
                     background-size: cover;
                 }
+
                 &:nth-child(6) {
                     background: url("../../images/card_sng.jpg");
                     background-repeat: no-repeat;
                     background-position: left;
                 }
+
                 &:nth-child(7) {
                     background: url("../../images/sngApp_1.jpg");
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: cover;
                 }
+
                 &:nth-child(8) {
                     background: url("../../images/bhnApp_2.jpg");
                     background-repeat: no-repeat;
@@ -191,7 +198,7 @@
     }
 
     h3 {
-        a{
+        a {
             text-decoration: none;
             font-size: $font-44;
             color: $title-color;
@@ -222,9 +229,40 @@
             height: 30px;
             margin: 0 0.313rem;
         }
-        img.angular{
+
+        img.angular {
             width: 40px;
             height: 40px;
         }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #sectionWork {
+        height: auto;
+
+        .container {
+            height: auto;
+            padding: 2rem;
+
+            .row {
+                .content-section {
+                    transform: none;
+                    top: 0;
+
+                    h1 {
+                        font-size: $font-28;
+                        line-height: 2.5rem;
+                    }
+                }
+            }
+        }
+        .carousel{
+            top: 60%;
+            transform: translateY(-35%);
+        }
+    }
+    .slideContent{
+        padding: 1rem 1rem 5rem;
     }
 }

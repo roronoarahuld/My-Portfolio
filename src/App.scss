@@ -363,9 +363,9 @@ section {
 
   .floating-next-div {
     position: fixed;
-    height: 84px;
+    height: 74px;
     .container{
-      padding: 1rem 2rem !important;
+      padding: 0.5rem 2rem !important;
       .thumbnail-area {
         .ps-5{
           padding-left: 0rem !important;
@@ -379,7 +379,7 @@ section {
         }
   
         span {
-          height: 18px;
+          height: 21px;
           max-width: 200px;
           overflow: hidden;
           position: relative;
