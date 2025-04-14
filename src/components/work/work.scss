@@ -237,7 +237,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
     #sectionWork {
         height: auto;
 
@@ -257,11 +257,6 @@
                 }
             }
         }
-        .carousel{
-            margin-top: 5rem;
-            top: 60%;
-            transform: translateY(-35%);
-        }
     }
     .slideContent{
         padding: 1rem 1rem 5rem;
@@ -269,6 +264,16 @@
             a{
                 font-size: $font-28;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    #sectionWork {
+        .carousel{
+            margin-top: 5rem;
+            top: 60%;
+            transform: translateY(-35%);
         }
     }
 }

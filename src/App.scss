@@ -271,10 +271,15 @@ section {
 .contact_div {
   padding: 1rem;
 
+  .close{
+    span{
+      bottom: 4px;
+    }
+  }
+
   h3 {
-    font-size: $font-44;
+    font-size: $font-34;
     color: $title-color;
-    margin-bottom: 1.25rem;
     font-weight: $medium;
   }
 
@@ -418,7 +423,7 @@ section {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   body {
     overflow: scroll;
   }
@@ -473,6 +478,11 @@ section {
   }
 
   .contact_div {
+    .close{
+      span{
+        bottom: 0px;
+      }
+    }
     h3 {
       font-size: $font-28;
     }

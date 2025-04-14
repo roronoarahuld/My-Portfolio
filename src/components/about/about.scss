@@ -141,7 +141,7 @@
         }
     }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1200px){
     #sectionAbout{
         height: auto;
         .container {
@@ -150,7 +150,16 @@
             .row {
                 height: auto;
                 .image-section{
-                    display: none;
+                    .image-area{
+                        width: 100%;
+                        height: 450px;
+                        background-position: center;
+                        position: static;
+                        top: 0%;
+                        left: 0%;
+                        transform: none;
+                        float: none;
+                    }
                 }
                 .content-section{
                     border: none;
@@ -173,6 +182,17 @@
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    #sectionAbout{
+        .container {
+            .row {
+                .image-section{
+                    display: none;
                 }
             }
         }

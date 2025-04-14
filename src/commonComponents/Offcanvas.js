@@ -24,7 +24,7 @@ export const ContactOffCanvas = () => {
                             <span></span>
                         </button>
                     </div>
-                    <div>
+                    <div className="mt-4">
                         {
                             storeData[0]?.contactPage[0]?.descp.map((links) => {
                                 return (
