@@ -1,5 +1,6 @@
 @import "../index.scss";
-nav{
+
+nav {
     height: 5.438rem;
     border-bottom: 1px solid $border-color;
     // padding: $custom-padding;
@@ -8,24 +9,30 @@ nav{
     width: 100%;
     top: 0;
     z-index: 999;
-    .row{
+
+    .row {
         height: inherit;
-        a{
+
+        a {
             height: 100%;
             display: block;
             text-decoration: none;
             cursor: pointer;
-            ul{
+
+            ul {
                 list-style: none;
                 display: flex;
                 height: inherit;
                 align-items: center;
-                li{
+
+                li {
                     padding-right: 1rem;
-                    img{
+
+                    img {
                         width: 2.438rem;
                     }
-                    h4{
+
+                    h4 {
                         color: $title-color;
                         font-weight: $semiBold;
                         font-size: 1.875rem;
@@ -33,20 +40,74 @@ nav{
                 }
             }
         }
-        .menu-links{
+
+        .menu-links {
             list-style: none;
             display: flex;
             height: 100%;
             justify-content: flex-end;
             align-items: center;
-            li{
-                &:nth-child(even){
+
+            li {
+                &:nth-child(even) {
                     padding: 0 2rem;
                 }
-                a{
-                color: $title-color;
-                font-size: 1.125rem;
-                }  
+
+                a {
+                    color: $title-color;
+                    font-size: 1.125rem;
+                }
+            }
+        }
+
+        .mob-menu {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        .container{
+            padding-left: 2rem;
+            .row {
+                .menu-area {
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+    
+                    .menu-links {
+                        display: none;
+                    }
+    
+                    .mob-menu {
+                        display: flex;
+                        background: transparent;
+                        border: none;
+                        margin-right: 1rem;
+                        position: relative;
+                        span {
+                            background-color: $title-color;
+                            border-radius: 20px;
+                            height: 4px;
+                            position: absolute;
+                            right: 0;
+                            &:nth-child(1) {
+                                width: 40px;
+                                top: -10px;
+                            }
+                            &:nth-child(2) {
+                                width: 30px;
+                                right: 10px;
+                            }
+                            &:nth-child(3) {
+                                width: 20px;
+                                top: 10px;
+                                right: 20px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

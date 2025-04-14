@@ -1,4 +1,5 @@
 import { useGlobalContext } from "../AppContext";
+import { MobileMenu } from "../commonComponents/Offcanvas";
 import { useApiData } from "../services/Api";
 const Header = () => {
     const {storeData , loading} = useApiData()
@@ -20,7 +21,7 @@ const Header = () => {
                                 </ul>
                             </a>
                         </div>
-                        <div className="col-6">
+                        <div className="col-6 menu-area">
                             <ul className="menu-links">
                                 <li>
                                     <a onClick={() => { setActiveComponent("About") }} href="#!">{storeData[0]?.menu[1]?.menuName}</a>
@@ -32,10 +33,16 @@ const Header = () => {
                                     <a data-bs-toggle="offcanvas" data-bs-target="#contactSection" aria-controls="contactSection" href="#!">{storeData[0]?.menu[3]?.menuName}</a>
                                 </li>
                             </ul>
+                            <button className="mob-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuSection" aria-controls="menuSection">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
                         </div>
                     </div>
                 </div>
             </nav>
+            <MobileMenu/>
         </>
     )
 }

@@ -258,11 +258,17 @@
             }
         }
         .carousel{
+            margin-top: 5rem;
             top: 60%;
             transform: translateY(-35%);
         }
     }
     .slideContent{
         padding: 1rem 1rem 5rem;
+        h3{
+            a{
+                font-size: $font-28;
+            }
+        }
     }
 }

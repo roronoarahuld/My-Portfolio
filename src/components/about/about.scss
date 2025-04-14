@@ -156,6 +156,13 @@
                         left: 0;
                         transform: none;
                         padding: 0 0.75rem;
+                        h1{
+                            font-size: $font-28;
+                            line-height: 2.5rem;
+                            span{
+                                font-size: $font-28;
+                            }
+                        }
                     }
                 }
             }

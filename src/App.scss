@@ -356,6 +356,67 @@ section {
   color: $title-color !important;
 }
 
+.close {
+  background: transparent;
+  border: none;
+  position: relative;
+
+  span {
+    width: 30px;
+    height: 3px;
+    background-color: $para-color;
+    border-radius: 20px;
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+
+    &:first-child {
+      transform: rotate(45deg);
+    }
+
+    &:last-child {
+      transform: rotate(135deg);
+    }
+  }
+}
+
+#menuSection {
+  .menu-div {
+    padding: 1rem;
+    img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .menu-links{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      list-style: none;
+      li{
+        a{
+          text-decoration: none;
+          color: $title-color;
+          font-size: $font-34;
+        }
+        &:not(:last-child){
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+  .bottom_copyright{
+    position: absolute;
+    bottom: 20px;
+    span{
+      font-size: 0.875rem;
+      color: $para-color;
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   body {
     overflow: scroll;
@@ -364,20 +425,23 @@ section {
   .floating-next-div {
     position: fixed;
     height: 74px;
-    .container{
+
+    .container {
       padding: 0.5rem 2rem !important;
+
       .thumbnail-area {
-        .ps-5{
+        .ps-5 {
           padding-left: 0rem !important;
         }
+
         img {
           display: none;
         }
-  
+
         h4 {
           font-size: 1rem;
         }
-  
+
         span {
           height: 21px;
           max-width: 200px;
@@ -389,18 +453,27 @@ section {
           white-space: nowrap;
         }
       }
-      .tags_next_page{
+
+      .tags_next_page {
         justify-content: end;
-        .arrow_next{
-          img{
+
+        .arrow_next {
+          img {
             width: 40px;
             height: 40px;
           }
         }
-        ul{
+
+        ul {
           display: none;
         }
       }
+    }
+  }
+
+  .contact_div {
+    h3 {
+      font-size: $font-28;
     }
   }
 }

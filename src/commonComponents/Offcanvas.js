@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useGlobalContext } from "../AppContext";
 import { useApiData } from "../services/Api";
 type Props = {
     Attribute: string,
@@ -16,7 +17,13 @@ export const ContactOffCanvas = () => {
         <div className="offcanvas offcanvas-end " tabIndex="-1" id="contactSection" aria-labelledby="offcanvasBottomLabel">
             <div className="offcanvas-body small">
                 <div className="contact_div">
-                    <h3>{storeData[0]?.contactPage[0]?.title}</h3>
+                    <div className="d-flex justify-content-between">
+                        <h3>{storeData[0]?.contactPage[0]?.title}</h3>
+                        <button type="button" className="close" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
                     <div>
                         {
                             storeData[0]?.contactPage[0]?.descp.map((links) => {
@@ -60,6 +67,46 @@ export const ContactOffCanvas = () => {
                             })
                         }
                     </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export const MobileMenu = () => {
+    const { storeData } = useApiData();
+    const { setActiveComponent } = useGlobalContext();
+    const {contactOffCanvas, setContactOffCanvas} = useState()
+    
+    const showContact = () => {
+        setContactOffCanvas(document.getElementById('menuSection'))
+        contactOffCanvas.addEventlistener('hide.bs.offcanvas')
+    }
+    return (
+        <div className="offcanvas offcanvas-end " tabIndex="-1" id="menuSection" aria-labelledby="offcanvasBottomLabel">
+            <div className="offcanvas-body small">
+                <div className="menu-div">
+                    <div className="d-flex justify-content-between">
+                        <img alt="Logo" src={storeData[0]?.menuLogo} />
+                        <button type="button" className="close" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                    <ul className="menu-links">
+                        <li>
+                            <a onClick={() => { setActiveComponent("About") }} href="javascript:void(0)" data-bs-dismiss="offcanvas">{storeData[0]?.menu[1]?.menuName}</a>
+                        </li>
+                        <li>
+                            <a onClick={() => { setActiveComponent("Work") }} href="javascript:void(0)" data-bs-dismiss="offcanvas">{storeData[0]?.menu[2]?.menuName}</a>
+                        </li>
+                        <li>
+                            <a data-bs-toggle="offcanvas" data-bs-target="#contactSection" aria-controls="contactSection" href="#!" onClick={()=>showContact}>{storeData[0]?.menu[3]?.menuName}</a>
+                        </li>
+                    </ul>
+                </div>
+                <div className="bottom_copyright">
+                    <span>&copy;Copyright {new Date().getFullYear()} Rahul. All Rights Reserved.</span>
                 </div>
             </div>
         </div>
