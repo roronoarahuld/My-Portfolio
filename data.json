@@ -237,7 +237,7 @@
                                 "id" : 1,
                                 "images" : [
                                     {
-                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/antim_yatra.png"
+                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/antim_yatra.jpg"
                                     }
                                 ],
                                 "description" : ""
@@ -278,7 +278,7 @@
                                 "id" : 1,
                                 "images" : [
                                     {
-                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/puneri_paltan_1.png"
+                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/puneri_paltan_1.jpg"
                                     }
                                 ],
                                 "description" : ""
@@ -322,7 +322,7 @@
                                 "id" : 1,
                                 "images" : [
                                     {
-                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/staples_tru_red.png"
+                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/staples_tru_red.jpg"
                                     }
                                 ],
                                 "description" : ""
@@ -372,7 +372,7 @@
                                 "id" : 1,
                                 "images" : [
                                     {
-                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/JIB.png"
+                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/JIB.jpg"
                                     }
                                 ],
                                 "description" : ""
@@ -419,7 +419,7 @@
                                 "id" : 1,
                                 "images" : [
                                     {
-                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/bhn_1.png"
+                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/bhn_1.jpg"
                                     }
                                 ],
                                 "description" : ""
@@ -428,7 +428,7 @@
                                 "id" : 2,
                                 "images" : [
                                     {
-                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/bhn_2.png"
+                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/bhn_2.jpg"
                                     }
                                 ],
                                 "description" : "While I had a strong foundation in HTML and CSS, this project pushed me to become even more efficient in front-end development. Additionally, I took the initiative to learn Angular, which allowed me to contribute to Angular-related tasks and improve my problem-solving approach. My key contributions included setting up the theme, designing reusable components, and ensuring a consistent and scalable UI framework for future developments."
@@ -437,7 +437,7 @@
                                 "id" : 3,
                                 "images" : [
                                     {
-                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/bhn_3.png"
+                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/bhn_3.jpg"
                                     }
                                 ],
                                 "description" : "This experience significantly enhanced my ability to adapt quickly to new technologies while working under high-pressure deadlines. It reinforced the importance of writing modular and maintainable code, improving UI/UX, and collaborating effectively within a fast-moving team. The project not only expanded my technical skill set but also sharpened my ability to deliver high-quality solutions efficiently."
@@ -484,7 +484,7 @@
                                 "id" : 1,
                                 "images" : [
                                     {
-                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/singularity.png"
+                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/singularity.jpg"
                                     }
                                 ],
                                 "description" : ""
@@ -493,7 +493,7 @@
                                 "id" : 2,
                                 "images" : [
                                     {
-                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/singualrity_portal.png"
+                                        "link" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/singualrity_portal.jpg"
                                     }
                                 ],
                                 "description" : "The customer portal I worked on enables users to apply for loans, track their application status, and complete the necessary procedures seamlessly. This project provided me with valuable experience in building and improving financial service platforms that prioritize user experience and accessibility."

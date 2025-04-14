@@ -69,6 +69,7 @@
                             font-size: 1.125rem;
                             line-height: 1.5em;
                             font-weight: $medium;
+                            list-style: none;
 
                             span {
                                 color: $title-color;
@@ -89,6 +90,9 @@
                                     }
                                 }
                             }
+                        }
+                        li.color-black{
+                            list-style: disc;
                         }
                     }
                 }
@@ -161,6 +165,11 @@
                             line-height: 2.5rem;
                             span{
                                 font-size: $font-28;
+                            }
+                        }
+                        .skills-ul{
+                            li{
+                                flex-direction: column;
                             }
                         }
                     }
