@@ -202,6 +202,10 @@
             text-decoration: none;
             font-size: $font-44;
             color: $title-color;
+            transition: all .3s ease-in-out;
+            &:hover{
+                color: $primary-color;
+            }
         }
     }
 
