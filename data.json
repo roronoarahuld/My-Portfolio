@@ -383,7 +383,7 @@
                         "id" : 5,
                         "value": "bhn",
                         "title": "Bharat Housing Network",
-                        "projectHandled" : "Project handled during my time at HomeCapital PVT LTD",
+                        "projectHandled" : "Project handled during my time at Homeville Group",
                         "workTag": [
                             {
                                 "value" : "HTML"
@@ -448,7 +448,7 @@
                         "id" : 6,
                         "value": "sng",
                         "title": "Singualrity CreditWorld",
-                        "projectHandled" : "Project handled during my time at HomeCapital PVT LTD",
+                        "projectHandled" : "Project handled during my time at Homeville Group",
                         "workTag": [
                             {
                                 "value" : "HTML"
@@ -478,7 +478,7 @@
                                 "image" : "https://raw.githubusercontent.com/roronoarahuld/My-Portfolio/refs/heads/master/src/images/angular.png"
                             }
                         ],
-                        "subtitle" : "During my tenure at BHN, I had the opportunity to work on several projects, including developing the Singularity Creditworld website from scratch and enhancing its customer portal. Singularity Creditworld is an RBI-approved Non-Banking Financial Company (NBFC) offering a range of retail credit products and solutions in impact sectors. Their offerings include housing loans, property loans, solar loans, and personal loans, accessible through their mobile app.",
+                        "subtitle" : "During my tenure at Homeville Group, I had the opportunity to work on several projects, including developing the Singularity Creditworld website from scratch and enhancing its customer portal. Singularity Creditworld is an RBI-approved Non-Banking Financial Company (NBFC) offering a range of retail credit products and solutions in impact sectors. Their offerings include housing loans, property loans, solar loans, and personal loans, accessible through their mobile app.",
                         "workImages" : [
                             {
                                 "id" : 1,
@@ -504,7 +504,7 @@
                         "id" : 7,
                         "value": "sngApp",
                         "title": "Singualrity App",
-                        "projectHandled" : "Project handled during my time at HomeCapital PVT LTD",
+                        "projectHandled" : "Project handled during my time at Homeville Group",
                         "workTag": [
                             {
                                 "value" : "React Native"
@@ -557,7 +557,7 @@
                         "id" : 8,
                         "value": "bhnApp",
                         "title": "BHN FieldForce",
-                        "projectHandled" : "Project handled during my time at HomeCapital PVT LTD",
+                        "projectHandled" : "Project handled during my time at Homeville Group",
                         "workTag": [
                             {
                                 "value" : "React Native"
